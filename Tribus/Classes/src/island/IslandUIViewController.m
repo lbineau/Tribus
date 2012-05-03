@@ -12,6 +12,7 @@
 
 @synthesize carousel;
 @synthesize items;
+@synthesize itemDatas;
 
 - (void)awakeFromNib
 {
@@ -26,6 +27,13 @@
                   @"island-green.png",
                   @"island-orange.png",
                   @"island-yellow.png",
+                  nil];
+    self.itemDatas = [NSMutableArray arrayWithObjects:@"green",
+                  @"orange",
+                  @"yellow",
+                  @"red",
+                  @"blue",
+                  @"purple",
                   nil];
 }
 
@@ -50,6 +58,7 @@
     
     carousel = nil;
     items = nil;
+    itemDatas = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -82,7 +91,11 @@
     //return the total number of items in the carousel
     return [items count];
 }
-
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    if(index == carousel.currentItemIndex){
+        NSLog(@"Island selected : %@",[itemDatas objectAtIndex:index]);
+    }
+}
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
 {
     UILabel *label = nil;
@@ -92,11 +105,11 @@
     {
         view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[items objectAtIndex:index]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
-        label = [[UILabel alloc] initWithFrame:view.bounds];
+        /*label = [[UILabel alloc] initWithFrame:view.bounds];
         label.backgroundColor = [UIColor clearColor];
         label.textAlignment = UITextAlignmentCenter;
         label.font = [label.font fontWithSize:50];
-        [view addSubview:label];
+        [view addSubview:label];*/
     }
     else
     {

@@ -7,6 +7,10 @@
 //
 
 #import "GenericUIViewController.h"
-@interface ShopUIViewController : GenericUIViewController
+#import "iCarousel.h"
 
+@interface ShopUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
+@property (weak, nonatomic) IBOutlet iCarousel *carousel;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, retain) NSMutableArray *items;
 @end

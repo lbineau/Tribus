@@ -11,6 +11,7 @@
 
 @interface GenericUIViewController : UIViewController{
     //NavigationUIViewController *navigationUIViewController;
+    UIView *viewBackButton;
 }
 @property (weak, nonatomic) IBOutlet UILabel *viewTitleLabel;
 //@property (nonatomic,retain) NavigationUIViewController *navigationUIViewController;

@@ -17,6 +17,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="RAc-QS-DRT">
+                                <rect key="frame" x="10" y="10" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -24,6 +31,9 @@
                     <navigationItem key="navigationItem" title="Title" id="aOZ-Ps-yzu">
                         <barButtonItem key="backBarButtonItem" title="Back" id="8h7-6o-TlM"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="viewTitleLabel" destination="RAc-QS-DRT" id="Myx-eY-dWh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1390" y="-1272"/>
@@ -40,11 +50,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="fF9-Gq-cWZ">
+                                <rect key="frame" x="10" y="10" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="4cT-eD-2S1"/>
+                    <connections>
+                        <outlet property="viewTitleLabel" destination="fF9-Gq-cWZ" id="51M-k8-BRY"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1390" y="-833"/>
@@ -61,11 +81,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="Oss-vw-RGw" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" id="kEr-OT-kpj">
+                                        <rect key="frame" x="0.0" y="240" width="480" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qch-cS-jYk" id="n5p-Jl-hJU"/>
+                                    <outlet property="delegate" destination="qch-cS-jYk" id="FRs-wg-58O"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="3Wi-UI-cwZ">
+                                <rect key="frame" x="10" y="10" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="avK-W9-StR"/>
+                    <connections>
+                        <outlet property="carousel" destination="Oss-vw-RGw" id="6rz-oG-XRf"/>
+                        <outlet property="pageControl" destination="kEr-OT-kpj" id="apO-yC-O59"/>
+                        <outlet property="viewTitleLabel" destination="3Wi-UI-cwZ" id="esd-0m-zLP"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1398" y="-393"/>
@@ -82,11 +129,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="8Hs-WE-VKQ">
+                                <rect key="frame" x="0.0" y="0.0" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="u3Y-ZN-H8f"/>
+                    <connections>
+                        <outlet property="viewTitleLabel" destination="8Hs-WE-VKQ" id="ehc-kf-tmg"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1410" y="35"/>
@@ -103,11 +160,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="GJf-kF-Yj4">
+                                <rect key="frame" x="10" y="10" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="f8T-RL-Krx"/>
+                    <connections>
+                        <outlet property="viewTitleLabel" destination="GJf-kF-Yj4" id="ytU-Cr-gTm"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1410" y="463"/>
@@ -133,6 +200,13 @@
                                     <outlet property="delegate" destination="jyL-8o-Pm5" id="iAP-NW-j9S"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="20" id="shD-v1-mLF">
+                                <rect key="frame" x="10" y="10" width="460" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -140,6 +214,7 @@
                     <navigationItem key="navigationItem" id="Rn8-p1-HZT"/>
                     <connections>
                         <outlet property="carousel" destination="CJs-rT-oCI" id="kuM-Nu-oIS"/>
+                        <outlet property="viewTitleLabel" destination="shD-v1-mLF" id="8UA-Uh-KRI"/>
                     </connections>
                 </viewController>
             </objects>
@@ -294,7 +369,7 @@
                 <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="IslandUIViewController" superclassName="UIViewController">
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
@@ -308,6 +383,10 @@
         </class>
         <class className="ShopUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carousel" candidateClass="iCarousel"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+            </relationships>
         </class>
         <class className="TravelUIViewController" superclassName="GenericUIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>

@@ -35,6 +35,11 @@
 		C83AED6215487BE3003EB844 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C83AED6015487BE3003EB844 /* InfoPlist.strings */; };
 		C83AED6415487BE3003EB844 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AED6315487BE3003EB844 /* main.m */; };
 		C83AED6815487BE3003EB844 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AED6715487BE3003EB844 /* AppDelegate.m */; };
+		C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */; };
+		C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */; };
+		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
+		C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */; };
+		C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C87985D3154F093A00DC03FA /* Kohicle25.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,11 @@
 		C83AED6515487BE3003EB844 /* Tribus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tribus-Prefix.pch"; sourceTree = "<group>"; };
 		C83AED6615487BE3003EB844 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C83AED6715487BE3003EB844 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Bold.otf"; sourceTree = "<group>"; };
+		C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Light.otf"; sourceTree = "<group>"; };
+		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
+		C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Thin.otf"; sourceTree = "<group>"; };
+		C87985D3154F093A00DC03FA /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +270,7 @@
 		C83AED5D15487BE3003EB844 /* Tribus */ = {
 			isa = PBXGroup;
 			children = (
+				C887045A154F327900F05757 /* Models */,
 				C83AED7D15487C98003EB844 /* Bin */,
 				C83AED7E15487C98003EB844 /* Classes */,
 				C83AED7F15487C98003EB844 /* Resources */,
@@ -300,6 +311,7 @@
 		C83AED7F15487C98003EB844 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C87985C9154F06E600DC03FA /* fonts */,
 				C815E9B315489678004BB7B7 /* images */,
 				C8683ABD15488A08000062AC /* ui */,
 			);
@@ -313,6 +325,26 @@
 				C80D15ED15489D5D00A5BB61 /* MainStoryboard.storyboard */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		C87985C9154F06E600DC03FA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C87985D3154F093A00DC03FA /* Kohicle25.ttf */,
+				C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */,
+				C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */,
+				C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */,
+				C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */,
+			);
+			name = fonts;
+			path = Tribus/Resources/fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+		C887045A154F327900F05757 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +409,11 @@
 				C815E9C615489678004BB7B7 /* shop-bg@2x.jpg in Resources */,
 				C815E9C715489678004BB7B7 /* validate@2x.png in Resources */,
 				C80D15EF15489D5D00A5BB61 /* MainStoryboard.storyboard in Resources */,
+				C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */,
+				C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */,
+				C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */,
+				C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */,
+				C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

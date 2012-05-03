@@ -47,6 +47,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set title on label
+    [viewTitleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:30]];
+    [viewTitleLabel setText:[self.title uppercaseString]];
+    
     /*navigationUIViewController=[[NavigationUIViewController alloc] initWithNibName:@"NavigationUIViewController" bundle:nil];
     [self addChildViewController:navigationUIViewController];
     [[self view] addSubview:navigationUIViewController.view];
