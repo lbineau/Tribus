@@ -19,22 +19,33 @@
 		C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C015488582002CD0A8 /* TribuUIViewController.m */; };
 		C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C215488582002CD0A8 /* ViewController.m */; };
 		C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */; };
-		C815E9BE15489678004BB7B7 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B415489678004BB7B7 /* back@2x.png */; };
-		C815E9BF15489678004BB7B7 /* island-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B515489678004BB7B7 /* island-bg@2x.jpg */; };
-		C815E9C015489678004BB7B7 /* island-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B615489678004BB7B7 /* island-green@2x.png */; };
-		C815E9C115489678004BB7B7 /* island-orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B715489678004BB7B7 /* island-orange@2x.png */; };
-		C815E9C215489678004BB7B7 /* island-yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B815489678004BB7B7 /* island-yellow@2x.png */; };
-		C815E9C315489678004BB7B7 /* main-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C815E9B915489678004BB7B7 /* main-bg@2x.jpg */; };
 		C815E9C415489678004BB7B7 /* main-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */; };
-		C815E9C515489678004BB7B7 /* mission-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BB15489678004BB7B7 /* mission-bg@2x.jpg */; };
-		C815E9C615489678004BB7B7 /* shop-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BC15489678004BB7B7 /* shop-bg@2x.jpg */; };
-		C815E9C715489678004BB7B7 /* validate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BD15489678004BB7B7 /* validate@2x.png */; };
 		C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5715487BE3003EB844 /* UIKit.framework */; };
 		C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5915487BE3003EB844 /* Foundation.framework */; };
 		C83AED5C15487BE3003EB844 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5B15487BE3003EB844 /* CoreGraphics.framework */; };
 		C83AED6215487BE3003EB844 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C83AED6015487BE3003EB844 /* InfoPlist.strings */; };
 		C83AED6415487BE3003EB844 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AED6315487BE3003EB844 /* main.m */; };
 		C83AED6815487BE3003EB844 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C83AED6715487BE3003EB844 /* AppDelegate.m */; };
+		C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C858645B1553571E00D44582 /* NavigationUIViewController.m */; };
+		C85864601553571E00D44582 /* NavigationUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C858645C1553571E00D44582 /* NavigationUIViewController.xib */; };
+		C85864611553571E00D44582 /* UntouchableUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C858645E1553571E00D44582 /* UntouchableUIView.m */; };
+		C85864761553575D00D44582 /* b_bleu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864631553575D00D44582 /* b_bleu@2x.png */; };
+		C85864771553575D00D44582 /* b_jaune@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864641553575D00D44582 /* b_jaune@2x.png */; };
+		C85864781553575D00D44582 /* b_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864651553575D00D44582 /* b_orange@2x.png */; };
+		C85864791553575D00D44582 /* b_rouge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864661553575D00D44582 /* b_rouge@2x.png */; };
+		C858647A1553575D00D44582 /* b_vert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864671553575D00D44582 /* b_vert@2x.png */; };
+		C858647B1553575D00D44582 /* b_violet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864681553575D00D44582 /* b_violet@2x.png */; };
+		C858647C1553575D00D44582 /* fond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864691553575D00D44582 /* fond@2x.png */; };
+		C858647D1553575D00D44582 /* fond1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646A1553575D00D44582 /* fond1@2x.png */; };
+		C858647E1553575D00D44582 /* fond2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646B1553575D00D44582 /* fond2@2x.png */; };
+		C858647F1553575D00D44582 /* fond3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646C1553575D00D44582 /* fond3@2x.png */; };
+		C85864801553575D00D44582 /* ile_bleue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646D1553575D00D44582 /* ile_bleue@2x.png */; };
+		C85864811553575D00D44582 /* ile_jaune@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646E1553575D00D44582 /* ile_jaune@2x.png */; };
+		C85864821553575D00D44582 /* ile_orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C858646F1553575D00D44582 /* ile_orange@2x.png */; };
+		C85864831553575D00D44582 /* ile_rouge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864701553575D00D44582 /* ile_rouge@2x.png */; };
+		C85864841553575D00D44582 /* ile_verte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864711553575D00D44582 /* ile_verte@2x.png */; };
+		C85864851553575D00D44582 /* ile_violette@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864721553575D00D44582 /* ile_violette@2x.png */; };
+		C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85864731553575D00D44582 /* main-bg@2x.jpg */; };
 		C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */; };
 		C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */; };
 		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
@@ -65,16 +76,7 @@
 		C80ED1C215488582002CD0A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C815E9AA15488CDC004BB7B7 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
 		C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
-		C815E9B415489678004BB7B7 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
-		C815E9B515489678004BB7B7 /* island-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "island-bg@2x.jpg"; sourceTree = "<group>"; };
-		C815E9B615489678004BB7B7 /* island-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "island-green@2x.png"; sourceTree = "<group>"; };
-		C815E9B715489678004BB7B7 /* island-orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "island-orange@2x.png"; sourceTree = "<group>"; };
-		C815E9B815489678004BB7B7 /* island-yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "island-yellow@2x.png"; sourceTree = "<group>"; };
-		C815E9B915489678004BB7B7 /* main-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-bg@2x.jpg"; sourceTree = "<group>"; };
 		C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-button-normal@2x.png"; sourceTree = "<group>"; };
-		C815E9BB15489678004BB7B7 /* mission-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mission-bg@2x.jpg"; sourceTree = "<group>"; };
-		C815E9BC15489678004BB7B7 /* shop-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "shop-bg@2x.jpg"; sourceTree = "<group>"; };
-		C815E9BD15489678004BB7B7 /* validate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "validate@2x.png"; sourceTree = "<group>"; };
 		C83AED5315487BE3003EB844 /* Tribus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tribus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83AED5715487BE3003EB844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C83AED5915487BE3003EB844 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,28 @@
 		C83AED6515487BE3003EB844 /* Tribus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tribus-Prefix.pch"; sourceTree = "<group>"; };
 		C83AED6615487BE3003EB844 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C83AED6715487BE3003EB844 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C858645A1553571E00D44582 /* NavigationUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationUIViewController.h; sourceTree = "<group>"; };
+		C858645B1553571E00D44582 /* NavigationUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationUIViewController.m; sourceTree = "<group>"; };
+		C858645C1553571E00D44582 /* NavigationUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationUIViewController.xib; sourceTree = "<group>"; };
+		C858645D1553571E00D44582 /* UntouchableUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UntouchableUIView.h; sourceTree = "<group>"; };
+		C858645E1553571E00D44582 /* UntouchableUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UntouchableUIView.m; sourceTree = "<group>"; };
+		C85864631553575D00D44582 /* b_bleu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_bleu@2x.png"; sourceTree = "<group>"; };
+		C85864641553575D00D44582 /* b_jaune@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_jaune@2x.png"; sourceTree = "<group>"; };
+		C85864651553575D00D44582 /* b_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_orange@2x.png"; sourceTree = "<group>"; };
+		C85864661553575D00D44582 /* b_rouge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_rouge@2x.png"; sourceTree = "<group>"; };
+		C85864671553575D00D44582 /* b_vert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_vert@2x.png"; sourceTree = "<group>"; };
+		C85864681553575D00D44582 /* b_violet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b_violet@2x.png"; sourceTree = "<group>"; };
+		C85864691553575D00D44582 /* fond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond@2x.png"; sourceTree = "<group>"; };
+		C858646A1553575D00D44582 /* fond1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond1@2x.png"; sourceTree = "<group>"; };
+		C858646B1553575D00D44582 /* fond2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond2@2x.png"; sourceTree = "<group>"; };
+		C858646C1553575D00D44582 /* fond3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fond3@2x.png"; sourceTree = "<group>"; };
+		C858646D1553575D00D44582 /* ile_bleue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_bleue@2x.png"; sourceTree = "<group>"; };
+		C858646E1553575D00D44582 /* ile_jaune@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_jaune@2x.png"; sourceTree = "<group>"; };
+		C858646F1553575D00D44582 /* ile_orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_orange@2x.png"; sourceTree = "<group>"; };
+		C85864701553575D00D44582 /* ile_rouge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_rouge@2x.png"; sourceTree = "<group>"; };
+		C85864711553575D00D44582 /* ile_verte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_verte@2x.png"; sourceTree = "<group>"; };
+		C85864721553575D00D44582 /* ile_violette@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_violette@2x.png"; sourceTree = "<group>"; };
+		C85864731553575D00D44582 /* main-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-bg@2x.jpg"; sourceTree = "<group>"; };
 		C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Bold.otf"; sourceTree = "<group>"; };
 		C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Light.otf"; sourceTree = "<group>"; };
 		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
@@ -172,6 +196,11 @@
 		C80ED1B215488582002CD0A8 /* navigation */ = {
 			isa = PBXGroup;
 			children = (
+				C858645A1553571E00D44582 /* NavigationUIViewController.h */,
+				C858645B1553571E00D44582 /* NavigationUIViewController.m */,
+				C858645C1553571E00D44582 /* NavigationUIViewController.xib */,
+				C858645D1553571E00D44582 /* UntouchableUIView.h */,
+				C858645E1553571E00D44582 /* UntouchableUIView.m */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -224,16 +253,24 @@
 		C815E9B315489678004BB7B7 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				C815E9B415489678004BB7B7 /* back@2x.png */,
-				C815E9B515489678004BB7B7 /* island-bg@2x.jpg */,
-				C815E9B615489678004BB7B7 /* island-green@2x.png */,
-				C815E9B715489678004BB7B7 /* island-orange@2x.png */,
-				C815E9B815489678004BB7B7 /* island-yellow@2x.png */,
-				C815E9B915489678004BB7B7 /* main-bg@2x.jpg */,
+				C85864631553575D00D44582 /* b_bleu@2x.png */,
+				C85864641553575D00D44582 /* b_jaune@2x.png */,
+				C85864651553575D00D44582 /* b_orange@2x.png */,
+				C85864661553575D00D44582 /* b_rouge@2x.png */,
+				C85864671553575D00D44582 /* b_vert@2x.png */,
+				C85864681553575D00D44582 /* b_violet@2x.png */,
+				C85864691553575D00D44582 /* fond@2x.png */,
+				C858646A1553575D00D44582 /* fond1@2x.png */,
+				C858646B1553575D00D44582 /* fond2@2x.png */,
+				C858646C1553575D00D44582 /* fond3@2x.png */,
+				C858646D1553575D00D44582 /* ile_bleue@2x.png */,
+				C858646E1553575D00D44582 /* ile_jaune@2x.png */,
+				C858646F1553575D00D44582 /* ile_orange@2x.png */,
+				C85864701553575D00D44582 /* ile_rouge@2x.png */,
+				C85864711553575D00D44582 /* ile_verte@2x.png */,
+				C85864721553575D00D44582 /* ile_violette@2x.png */,
+				C85864731553575D00D44582 /* main-bg@2x.jpg */,
 				C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */,
-				C815E9BB15489678004BB7B7 /* mission-bg@2x.jpg */,
-				C815E9BC15489678004BB7B7 /* shop-bg@2x.jpg */,
-				C815E9BD15489678004BB7B7 /* validate@2x.png */,
 			);
 			name = images;
 			path = Tribus/Resources/images;
@@ -398,22 +435,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83AED6215487BE3003EB844 /* InfoPlist.strings in Resources */,
-				C815E9BE15489678004BB7B7 /* back@2x.png in Resources */,
-				C815E9BF15489678004BB7B7 /* island-bg@2x.jpg in Resources */,
-				C815E9C015489678004BB7B7 /* island-green@2x.png in Resources */,
-				C815E9C115489678004BB7B7 /* island-orange@2x.png in Resources */,
-				C815E9C215489678004BB7B7 /* island-yellow@2x.png in Resources */,
-				C815E9C315489678004BB7B7 /* main-bg@2x.jpg in Resources */,
 				C815E9C415489678004BB7B7 /* main-button-normal@2x.png in Resources */,
-				C815E9C515489678004BB7B7 /* mission-bg@2x.jpg in Resources */,
-				C815E9C615489678004BB7B7 /* shop-bg@2x.jpg in Resources */,
-				C815E9C715489678004BB7B7 /* validate@2x.png in Resources */,
 				C80D15EF15489D5D00A5BB61 /* MainStoryboard.storyboard in Resources */,
 				C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */,
 				C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */,
 				C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */,
 				C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */,
 				C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */,
+				C85864601553571E00D44582 /* NavigationUIViewController.xib in Resources */,
+				C85864761553575D00D44582 /* b_bleu@2x.png in Resources */,
+				C85864771553575D00D44582 /* b_jaune@2x.png in Resources */,
+				C85864781553575D00D44582 /* b_orange@2x.png in Resources */,
+				C85864791553575D00D44582 /* b_rouge@2x.png in Resources */,
+				C858647A1553575D00D44582 /* b_vert@2x.png in Resources */,
+				C858647B1553575D00D44582 /* b_violet@2x.png in Resources */,
+				C858647C1553575D00D44582 /* fond@2x.png in Resources */,
+				C858647D1553575D00D44582 /* fond1@2x.png in Resources */,
+				C858647E1553575D00D44582 /* fond2@2x.png in Resources */,
+				C858647F1553575D00D44582 /* fond3@2x.png in Resources */,
+				C85864801553575D00D44582 /* ile_bleue@2x.png in Resources */,
+				C85864811553575D00D44582 /* ile_jaune@2x.png in Resources */,
+				C85864821553575D00D44582 /* ile_orange@2x.png in Resources */,
+				C85864831553575D00D44582 /* ile_rouge@2x.png in Resources */,
+				C85864841553575D00D44582 /* ile_verte@2x.png in Resources */,
+				C85864851553575D00D44582 /* ile_violette@2x.png in Resources */,
+				C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +482,8 @@
 				C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */,
 				C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */,
 				C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */,
+				C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */,
+				C85864611553571E00D44582 /* UntouchableUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
