@@ -10,7 +10,7 @@
 
 @implementation GenericUIViewController
 @synthesize viewTitleLabel;
-//@synthesize navigationUIViewController;
+@synthesize navigationUIViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,24 +48,20 @@
 {
     [super viewDidLoad];
     
-    // Set title on label
-    [viewTitleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:30]];
-    [viewTitleLabel setText:[self.title uppercaseString]];
-    
-    /*navigationUIViewController=[[NavigationUIViewController alloc] initWithNibName:@"NavigationUIViewController" bundle:nil];
+    navigationUIViewController =[[NavigationUIViewController alloc] initWithNibName:@"NavigationUIViewController" bundle:nil];
     [self addChildViewController:navigationUIViewController];
     [[self view] addSubview:navigationUIViewController.view];
-    [navigationUIViewController setTitle:[self title]];*/
+    [navigationUIViewController setTitle:[self title]];
 }
 
 
 - (void)viewDidUnload
 {
-    /*[navigationUIViewController removeFromParentViewController];
+    [navigationUIViewController removeFromParentViewController];
     [[navigationUIViewController view] removeFromSuperview];
     [self setNavigationUIViewController:nil];
     [self setViewTitleLabel:nil];
-    [super viewDidUnload];*/
+    [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

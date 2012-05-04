@@ -10,7 +10,8 @@
 #import "iCarousel.h"
 
 @interface IslandUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
-@property (weak, nonatomic) IBOutlet iCarousel *carousel;
+@property (weak, nonatomic) IBOutlet UILabel *islandTitle;
+@property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @property (nonatomic, retain) NSMutableArray *items;
-@property (nonatomic, retain) NSMutableArray *itemDatas;
+@property (nonatomic, retain) NSMutableDictionary *itemDatas;
 @end

@@ -1,21 +1,21 @@
 //
-//  MainUIViewController.m
-//  StoryTest
+//  NavigationUIViewController.m
+//  Tribus
 //
-//  Created by lbineau on 23/04/12.
+//  Created by lbineau on 03/05/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MainUIViewController.h"
+#import "NavigationUIViewController.h"
 
-@implementation MainUIViewController
+@implementation NavigationUIViewController
+@synthesize pageTitle;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"Helloworld");
     }
     return self;
 }
@@ -29,36 +29,34 @@
 }
 
 #pragma mark - View lifecycle
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    UIButton *button = (UIButton *)sender;
-    UIViewController *vc = [segue destinationViewController];
-    vc.title = button.titleLabel.text;
-}
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)setTitle:(NSString *)title
+{
+    pageTitle.text = [title uppercaseString];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set title on label
+    [pageTitle setFont:[UIFont fontWithName:@"Kohicle25" size:30]];
+    [pageTitle setText:self.title];
+    // Do any additional setup after loading the view from its nib.
 }
-*/
 
 - (void)viewDidUnload
 {
+    [self setPageTitle:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
+
 @end

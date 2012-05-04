@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GenericUIViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MainUIViewController : GenericUIViewController
+@interface MainUIViewController : UIViewController
 
 @end
