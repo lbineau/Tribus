@@ -51,6 +51,8 @@
 		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
 		C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */; };
 		C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C87985D3154F093A00DC03FA /* Kohicle25.ttf */; };
+		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,9 @@
 		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
 		C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Thin.otf"; sourceTree = "<group>"; };
 		C87985D3154F093A00DC03FA /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
+		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
+		C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
+		C8CF69E81553CFFE005AE1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */,
 				C80ED14015488247002CD0A8 /* QuartzCore.framework in Frameworks */,
 				C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */,
 				C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */,
@@ -134,6 +140,7 @@
 		C80ED12315487E02002CD0A8 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				C8CF69E31553CCF9005AE1E6 /* custom */,
 				C80ED12415487E02002CD0A8 /* iCarousel */,
 			);
 			path = libs;
@@ -279,6 +286,7 @@
 		C83AED4815487BE2003EB844 = {
 			isa = PBXGroup;
 			children = (
+				C8CF69E81553CFFE005AE1E6 /* CoreText.framework */,
 				C80ED13F15488247002CD0A8 /* QuartzCore.framework */,
 				C83AED5D15487BE3003EB844 /* Tribus */,
 				C83AED5615487BE3003EB844 /* Frameworks */,
@@ -384,6 +392,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C8CF69E31553CCF9005AE1E6 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */,
+				C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -484,6 +501,7 @@
 				C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */,
 				C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */,
 				C85864611553571E00D44582 /* UntouchableUIView.m in Sources */,
+				C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
