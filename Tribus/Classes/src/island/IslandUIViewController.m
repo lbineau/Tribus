@@ -22,7 +22,6 @@
     //data of some kind - don't store data in your item views
     //or the recycling mechanism will destroy your data once
     //your item views move off-screen
-    
     self.items = [NSMutableArray arrayWithObjects:
                   @"green",
                   @"orange",

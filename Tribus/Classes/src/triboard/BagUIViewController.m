@@ -1,27 +1,15 @@
 //
-//  TriboardUIViewController.m
-//  StoryTest
+//  BagUIViewController.m
+//  Tribus
 //
-//  Created by lbineau on 23/04/12.
+//  Created by lbineau on 05/05/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TriboardUIViewController.h"
+#import "BagUIViewController.h"
 
-@implementation TriboardUIViewController
+@implementation BagUIViewController
 
-- (id)init {
-    NSLog(@"init");
-	if (self = [super init]) {
-        
-	}
-	return self;
-}
-- (void)awakeFromNib
-{
-    NSLog(@"awakeFromNib");
-    self.hidesBottomBarWhenPushed = YES;
-}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,14 +36,13 @@
 }
 */
 
-
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
 }
-
+*/
 
 - (void)viewDidUnload
 {

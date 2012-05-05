@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CVS-00-h2A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CVS-00-h2A">
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -85,8 +85,8 @@
         <scene sceneID="FAA-bf-SDq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTI-md-yzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="XAb-BW-iNc" customClass="TriboardUIViewController" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="i6i-gU-rsd">
+                <viewController title="Triboard" wantsFullScreenLayout="YES" id="XAb-BW-iNc" customClass="TriboardUIViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFit" id="i6i-gU-rsd">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -107,17 +107,23 @@
         <scene sceneID="HQe-Q5-sp5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgB-7w-hhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="8wW-hU-t5F" sceneMemberID="viewController">
+                <viewController title="Inventaire" wantsFullScreenLayout="YES" id="8wW-hU-t5F" customClass="BagUIViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iqi-cG-b06">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="vyg-qv-2pg">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="o8u-ql-jMA"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1938" y="359"/>
+            <point key="canvasLocation" x="2096" y="435"/>
         </scene>
         <scene sceneID="sag-bO-YWJ">
             <objects>
@@ -290,7 +296,7 @@
         <scene sceneID="gUZ-yC-Rvq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WF-ff-nck" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController wantsFullScreenLayout="YES" modalTransitionStyle="partialCurl" navigationBarHidden="YES" id="CVS-00-h2A" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" navigationBarHidden="YES" id="CVS-00-h2A" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nh2-Js-pCO">
@@ -312,10 +318,10 @@
         <scene sceneID="KZ9-wC-Aoz">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPM-l0-kSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController modalTransitionStyle="flipHorizontal" id="3b7-YK-AVH" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="flipHorizontal" id="3b7-YK-AVH" customClass="CustomUITabBarController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oOb-JE-2b3"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JLv-E4-i6z">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -334,6 +340,54 @@
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
     </resources>
+    <classes>
+        <class className="BagUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
+        </class>
+        <class className="CustomUITabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
+        </class>
+        <class className="GenericUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IslandUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="MainUIViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
+        </class>
+        <class className="MissionUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
+        </class>
+        <class className="ShopUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
+            </relationships>
+        </class>
+        <class className="TravelUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
+        </class>
+        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
+        </class>
+        <class className="TribuUIViewController" superclassName="GenericUIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
+        </class>
+        <class className="iCarousel" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

@@ -46,11 +46,13 @@
 		C85864841553575D00D44582 /* ile_verte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864711553575D00D44582 /* ile_verte@2x.png */; };
 		C85864851553575D00D44582 /* ile_violette@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864721553575D00D44582 /* ile_violette@2x.png */; };
 		C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85864731553575D00D44582 /* main-bg@2x.jpg */; };
+		C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */; };
 		C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */; };
 		C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */; };
 		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
 		C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */; };
 		C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C87985D3154F093A00DC03FA /* Kohicle25.ttf */; };
+		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
 		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
 /* End PBXBuildFile section */
@@ -111,11 +113,15 @@
 		C85864711553575D00D44582 /* ile_verte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_verte@2x.png"; sourceTree = "<group>"; };
 		C85864721553575D00D44582 /* ile_violette@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_violette@2x.png"; sourceTree = "<group>"; };
 		C85864731553575D00D44582 /* main-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-bg@2x.jpg"; sourceTree = "<group>"; };
+		C868F5DC1555A8BA00CF03BB /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = "<group>"; };
+		C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = "<group>"; };
 		C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Bold.otf"; sourceTree = "<group>"; };
 		C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Light.otf"; sourceTree = "<group>"; };
 		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
 		C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Thin.otf"; sourceTree = "<group>"; };
 		C87985D3154F093A00DC03FA /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
+		C8C164371555D32700D88281 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
+		C8C164381555D32700D88281 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
 		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
 		C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
 		C8CF69E81553CFFE005AE1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -208,6 +214,8 @@
 				C858645C1553571E00D44582 /* NavigationUIViewController.xib */,
 				C858645D1553571E00D44582 /* UntouchableUIView.h */,
 				C858645E1553571E00D44582 /* UntouchableUIView.m */,
+				C868F5DC1555A8BA00CF03BB /* CustomUITabBarController.h */,
+				C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */,
 			);
 			path = navigation;
 			sourceTree = "<group>";
@@ -235,6 +243,8 @@
 			children = (
 				C80ED1BC15488582002CD0A8 /* TriboardUIViewController.h */,
 				C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */,
+				C8C164371555D32700D88281 /* BagUIViewController.h */,
+				C8C164381555D32700D88281 /* BagUIViewController.m */,
 			);
 			path = triboard;
 			sourceTree = "<group>";
@@ -502,6 +512,8 @@
 				C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */,
 				C85864611553571E00D44582 /* UntouchableUIView.m in Sources */,
 				C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */,
+				C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */,
+				C8C164391555D32700D88281 /* BagUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
