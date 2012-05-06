@@ -29,9 +29,14 @@
 
     // Add the same number of buttons as in the tabBar
     for( int i = 0; i < [self.viewControllers count]; i++ ) {
-        UIButton* aButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        aButton.frame = CGRectMake(i * 100.0, 0.0, 100.0, 40.0);
+        UIImage *buttonImage = [UIImage imageNamed:@"main-button-normal.png"];
+        
+        UIButton* aButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        aButton.frame = CGRectMake(20 + i * 120.0, 0.0, buttonImage.size.width,buttonImage.size.height);
         UIViewController *item = [self.viewControllers objectAtIndex:i];
+        aButton.titleLabel.font = [UIFont fontWithName:@"Kohicle25" size:25];
+        [aButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [aButton setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [aButton setTitle:item.title forState:UIControlStateNormal];
         [aButton setTag:i];
         [aButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -46,16 +51,15 @@
     // Get the views.
     int controllerIndex = (int)[button tag];
     if(controllerIndex != self.selectedIndex){
-        self.selectedIndex = controllerIndex;
-        /*UIView * fromView = self.selectedViewController.view;
-        UIView * toView = [[self.viewControllers objectAtIndex:controllerIndex] view];
         
-        [UIView transitionFromView:fromView
-                            toView:toView
-                          duration:1.0
-                           options:UIViewAnimationOptionTransitionCrossDissolve
-                        completion:^(BOOL finished) {self.selectedIndex = controllerIndex;}
-         ];*/
+        //Transition
+        [UIView beginAnimations:@"animation" context:nil];
+        //[myNavigationController pushViewController:myViewController animated:NO];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+        [UIView setAnimationDuration:0.5];
+        [UIView commitAnimations];
+        
+        self.selectedIndex = controllerIndex;
     }
 
 }

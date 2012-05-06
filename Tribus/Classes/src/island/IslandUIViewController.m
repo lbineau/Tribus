@@ -89,7 +89,6 @@
 - (void)viewDidUnload
 {
     [self setIslandTitle:nil];
-    [super viewDidUnload];
     
     //free up memory by releasing subviews
     icarousel.delegate = nil;
@@ -100,6 +99,8 @@
     items = nil;
     [itemDatas removeAllObjects];
     itemDatas = nil;
+    
+    [super viewDidUnload];
 }
 
 #pragma mark -

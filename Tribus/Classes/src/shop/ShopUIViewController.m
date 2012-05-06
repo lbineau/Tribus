@@ -10,6 +10,7 @@
 
 @implementation ShopUIViewController
 
+@synthesize islandTitle;
 @synthesize icarousel;
 @synthesize items;
 @synthesize itemDatas;
@@ -21,7 +22,6 @@
     //data of some kind - don't store data in your item views
     //or the recycling mechanism will destroy your data once
     //your item views move off-screen
-    
     self.items = [NSMutableArray arrayWithObjects:
                   @"green",
                   @"orange",
@@ -34,32 +34,32 @@
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_verte.png",@"Hilja, l'île sinueuse",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"ile_verte.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:0]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_orange.png",@"Oren, l'île dormante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0xA8510C), @"ile_orange.png",@"<b>Oren</b>, l'île dormante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:1]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_jaune.png",@"Isfar, l'île sablonneuse",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x8D5D2E), @"ile_jaune.png",@"<b>Isfar</b>, l'île sablonneuse",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:2]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_rouge.png",@"Tneera, l'île fumante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0xAD2304), @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:3]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_bleue.png",@"Pancada, l'île cristaline",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x3B4444), @"ile_bleue.png",@"<b>Pancada</b>, l'île cristaline",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:4]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:0x000000, @"ile_violette.png",@"Bahlû, l'île sombre",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x582E97), @"ile_violette.png",@"<b>Bahlû</b>, l'île sombre",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:5]];
     
@@ -74,12 +74,21 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeLinear;
-    //islandTitle.font = [UIFont fontWithName:@"Kohicle25" size:30];
+    CGFloat width = [UIScreen mainScreen].bounds.size.height;
+    CGFloat height = [UIScreen mainScreen].bounds.size.width;
+    islandTitle = [[NMCustomLabel alloc] initWithFrame:CGRectMake(0, height - 50, width, 100)];
+    islandTitle.ctTextAlignment = kCTCenterTextAlignment;
+    [islandTitle setBackgroundColor:[UIColor clearColor]];
+    //    islandTitle.textAlignment = UITextAlignmentCenter;
+    //[islandTitle setTextAlignment:UITextAlignmentCenter];
+    islandTitle.font = [UIFont fontWithName:@"Kohicle25" size:25];
+    islandTitle.fontBold = [UIFont fontWithName:@"Kohicle25" size:40];
+    [self.view addSubview:islandTitle];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
+    [self setIslandTitle:nil];
     
     //free up memory by releasing subviews
     icarousel.delegate = nil;
@@ -90,6 +99,8 @@
     items = nil;
     [itemDatas removeAllObjects];
     itemDatas = nil;
+    
+    [super viewDidUnload];
 }
 
 #pragma mark -
@@ -121,7 +132,10 @@
     //you'll get weird issues with carousel item content appearing
     //in the wrong place in the carousel
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:carousel.currentItemIndex]];
-    //islandTitle.text = [[currentItem valueForKey:@"title"] uppercaseString];
+    islandTitle.text = [currentItem valueForKey:@"title"];
+    
+    islandTitle.textColor = [currentItem valueForKey:@"color"];
+    //    [[NSColor alloc] initWithCIColor:<#(CIColor *)#>]
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
