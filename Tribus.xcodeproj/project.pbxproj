@@ -20,6 +20,7 @@
 		C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C215488582002CD0A8 /* ViewController.m */; };
 		C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */; };
 		C815E9C415489678004BB7B7 /* main-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */; };
+		C822F8211557FD0600F348C4 /* item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822F8201557FD0600F348C4 /* item@2x.png */; };
 		C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5715487BE3003EB844 /* UIKit.framework */; };
 		C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5915487BE3003EB844 /* Foundation.framework */; };
 		C83AED5C15487BE3003EB844 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5B15487BE3003EB844 /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
 		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
+		C8F12ACD1558064300DF34D7 /* item2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACC1558064300DF34D7 /* item2@2x.png */; };
+		C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACF1558103C00DF34D7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,7 @@
 		C815E9AA15488CDC004BB7B7 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
 		C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
 		C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-button-normal@2x.png"; sourceTree = "<group>"; };
+		C822F8201557FD0600F348C4 /* item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item@2x.png"; sourceTree = "<group>"; };
 		C83AED5315487BE3003EB844 /* Tribus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tribus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83AED5715487BE3003EB844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C83AED5915487BE3003EB844 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +129,8 @@
 		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
 		C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
 		C8CF69E81553CFFE005AE1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C8F12ACC1558064300DF34D7 /* item2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item2@2x.png"; sourceTree = "<group>"; };
+		C8F12ACF1558103C00DF34D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +276,8 @@
 		C815E9B315489678004BB7B7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C8F12ACC1558064300DF34D7 /* item2@2x.png */,
+				C822F8201557FD0600F348C4 /* item@2x.png */,
 				C85864631553575D00D44582 /* b_bleu@2x.png */,
 				C85864641553575D00D44582 /* b_jaune@2x.png */,
 				C85864651553575D00D44582 /* b_orange@2x.png */,
@@ -332,6 +340,7 @@
 				C83AED6615487BE3003EB844 /* AppDelegate.h */,
 				C83AED6715487BE3003EB844 /* AppDelegate.m */,
 				C83AED5E15487BE3003EB844 /* Supporting Files */,
+				C8F12ACF1558103C00DF34D7 /* Settings.bundle */,
 			);
 			path = Tribus;
 			sourceTree = "<group>";
@@ -487,6 +496,9 @@
 				C85864841553575D00D44582 /* ile_verte@2x.png in Resources */,
 				C85864851553575D00D44582 /* ile_violette@2x.png in Resources */,
 				C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */,
+				C822F8211557FD0600F348C4 /* item@2x.png in Resources */,
+				C8F12ACD1558064300DF34D7 /* item2@2x.png in Resources */,
+				C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

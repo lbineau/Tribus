@@ -11,7 +11,7 @@
 #import "iCarousel.h"
 
 @interface ShopUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
-@property (retain, nonatomic) NMCustomLabel *islandTitle;
+@property (weak, nonatomic) IBOutlet UIView *productDetail;
 @property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 @property (nonatomic, retain) NSMutableArray *items;
 @property (nonatomic, retain) NSMutableDictionary *itemDatas;

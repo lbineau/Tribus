@@ -15,7 +15,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        NSLog(@"Helloworld");
     }
     return self;
 }
@@ -42,17 +41,22 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
+    NSLog(@"%i",[pref integerForKey:@"Ligne"]);
+    [pref setInteger:3 forKey:@"Ligne"];
+    [pref synchronize];
 }
-*/
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
