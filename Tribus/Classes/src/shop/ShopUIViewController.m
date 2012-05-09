@@ -25,6 +25,8 @@
     self.items = [NSMutableArray arrayWithObjects:
                   @"green",
                   @"blue",
+                  @"red",
+                  @"yellow",
                   nil];
     
     self.itemDatas = [[NSMutableDictionary alloc] init];
@@ -37,6 +39,14 @@
                           [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:1]];
+    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
+                  forKey:[items objectAtIndex:2]];
+    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
+                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
+                  forKey:[items objectAtIndex:3]];
     
 }
 
@@ -49,7 +59,10 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeLinear;
-    [icarousel setContentOffset:CGSizeMake(-50, 0)];
+    [icarousel.currentItemView addSubview:self.productDetail];
+    [productDetail setFrame:icarousel.currentItemView.frame];
+    [productDetail setHidden:YES];
+    //[icarousel setContentOffset:CGSizeMake(-50, 0)];
 }
 
 - (void)viewDidUnload
@@ -70,28 +83,10 @@
 
 #pragma mark -
 #pragma mark iCarousel methods
-- (CGFloat)carousel:(iCarousel *)carousel valueForTransformOption:(iCarouselTranformOption)option withDefault:(CGFloat)value
-{
-    switch (option)
-    {
-        case iCarouselTranformOptionArc:
-        {
-            return 2 * M_PI * 1;
-        }
-        case iCarouselTranformOptionRadius:
-        {
-            return value * 1.5;
-        }
-        default:
-        {
-            return value;
-        }
-    }
-}
+
 - (void)carouselWillBeginScrollingAnimation:(iCarousel *)carousel{
     
     //[productDetail removeFromSuperview];
-    NSLog(@"scroll");
 }
 - (void)carouselDidScroll:(iCarousel *)carousel{
     
@@ -111,13 +106,16 @@
     //3. now add animation
     [UIView beginAnimations:@"View Flip" context:nil];
     [UIView setAnimationDuration:1.25];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];    if(index == carousel.currentItemIndex){
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    if(index == carousel.currentItemIndex){
         
         [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight 
                                    forView:carousel.currentItemView cache:YES];
             
         [productDetail removeFromSuperview];
         [carousel.currentItemView addSubview:self.productDetail];
+        [productDetail setHidden:NO];
+        [productDetail setFrame:carousel.currentItemView.frame];
     } else {
     }
     [UIView commitAnimations];
