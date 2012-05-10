@@ -19,7 +19,15 @@
 		C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C015488582002CD0A8 /* TribuUIViewController.m */; };
 		C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C215488582002CD0A8 /* ViewController.m */; };
 		C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */; };
-		C815E9C415489678004BB7B7 /* main-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */; };
+		C81D5727155C4B3F00E02046 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81D5726155C4B3F00E02046 /* Kohicle25.ttf */; };
+		C81D5729155C5B1F00E02046 /* back-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5728155C5B1F00E02046 /* back-btn@2x.png */; };
+		C81D5730155C603A00E02046 /* main-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D572E155C603A00E02046 /* main-button-normal@2x.png */; };
+		C81D5731155C603A00E02046 /* main-button-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D572F155C603A00E02046 /* main-button-selected@2x.png */; };
+		C81D5735155C6E5F00E02046 /* tribus-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */; };
+		C81D5737155C73F000E02046 /* triboard-customization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5736155C73F000E02046 /* triboard-customization@2x.png */; };
+		C81D5770155C7D9300E02046 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81D576F155C7D9300E02046 /* CoreData.framework */; };
+		C81D577C155C849800E02046 /* TribusDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */; };
+		C81D577F155C84B800E02046 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D577E155C84B800E02046 /* Color.m */; };
 		C822F8211557FD0600F348C4 /* item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822F8201557FD0600F348C4 /* item@2x.png */; };
 		C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5715487BE3003EB844 /* UIKit.framework */; };
 		C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5915487BE3003EB844 /* Foundation.framework */; };
@@ -53,7 +61,6 @@
 		C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */; };
 		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
 		C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */; };
-		C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C87985D3154F093A00DC03FA /* Kohicle25.ttf */; };
 		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
 		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
@@ -84,7 +91,16 @@
 		C80ED1C215488582002CD0A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C815E9AA15488CDC004BB7B7 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
 		C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
-		C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-button-normal@2x.png"; sourceTree = "<group>"; };
+		C81D5726155C4B3F00E02046 /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
+		C81D5728155C5B1F00E02046 /* back-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-btn@2x.png"; sourceTree = "<group>"; };
+		C81D572E155C603A00E02046 /* main-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-button-normal@2x.png"; sourceTree = "<group>"; };
+		C81D572F155C603A00E02046 /* main-button-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main-button-selected@2x.png"; sourceTree = "<group>"; };
+		C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
+		C81D5736155C73F000E02046 /* triboard-customization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-customization@2x.png"; sourceTree = "<group>"; };
+		C81D576F155C7D9300E02046 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TribusDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C81D577D155C84B800E02046 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		C81D577E155C84B800E02046 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		C822F8201557FD0600F348C4 /* item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item@2x.png"; sourceTree = "<group>"; };
 		C83AED5315487BE3003EB844 /* Tribus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tribus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83AED5715487BE3003EB844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -125,7 +141,6 @@
 		C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Light.otf"; sourceTree = "<group>"; };
 		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
 		C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Thin.otf"; sourceTree = "<group>"; };
-		C87985D3154F093A00DC03FA /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
 		C8C164371555D32700D88281 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
 		C8C164381555D32700D88281 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
 		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
@@ -140,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81D5770155C7D9300E02046 /* CoreData.framework in Frameworks */,
 				C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */,
 				C80ED14015488247002CD0A8 /* QuartzCore.framework in Frameworks */,
 				C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */,
@@ -278,7 +294,11 @@
 		C815E9B315489678004BB7B7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C81D572E155C603A00E02046 /* main-button-normal@2x.png */,
+				C81D572F155C603A00E02046 /* main-button-selected@2x.png */,
+				C81D5728155C5B1F00E02046 /* back-btn@2x.png */,
 				C8F12ACC1558064300DF34D7 /* item2@2x.png */,
+				C81D5736155C73F000E02046 /* triboard-customization@2x.png */,
 				C822F8201557FD0600F348C4 /* item@2x.png */,
 				C85864631553575D00D44582 /* b_bleu@2x.png */,
 				C85864641553575D00D44582 /* b_jaune@2x.png */,
@@ -293,12 +313,12 @@
 				C858646C1553575D00D44582 /* fond3@2x.png */,
 				C858646D1553575D00D44582 /* ile_bleue@2x.png */,
 				C858646E1553575D00D44582 /* ile_jaune@2x.png */,
+				C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */,
 				C858646F1553575D00D44582 /* ile_orange@2x.png */,
 				C85864701553575D00D44582 /* ile_rouge@2x.png */,
 				C85864711553575D00D44582 /* ile_verte@2x.png */,
 				C85864721553575D00D44582 /* ile_violette@2x.png */,
 				C85864731553575D00D44582 /* main-bg@2x.jpg */,
-				C815E9BA15489678004BB7B7 /* main-button-normal@2x.png */,
 			);
 			name = images;
 			path = Tribus/Resources/images;
@@ -307,6 +327,7 @@
 		C83AED4815487BE2003EB844 = {
 			isa = PBXGroup;
 			children = (
+				C81D576F155C7D9300E02046 /* CoreData.framework */,
 				C8CF69E81553CFFE005AE1E6 /* CoreText.framework */,
 				C80ED13F15488247002CD0A8 /* QuartzCore.framework */,
 				C83AED5D15487BE3003EB844 /* Tribus */,
@@ -397,7 +418,7 @@
 		C87985C9154F06E600DC03FA /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				C87985D3154F093A00DC03FA /* Kohicle25.ttf */,
+				C81D5726155C4B3F00E02046 /* Kohicle25.ttf */,
 				C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */,
 				C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */,
 				C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */,
@@ -410,6 +431,9 @@
 		C887045A154F327900F05757 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */,
+				C81D577D155C84B800E02046 /* Color.h */,
+				C81D577E155C84B800E02046 /* Color.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -474,13 +498,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83AED6215487BE3003EB844 /* InfoPlist.strings in Resources */,
-				C815E9C415489678004BB7B7 /* main-button-normal@2x.png in Resources */,
 				C80D15EF15489D5D00A5BB61 /* MainStoryboard.storyboard in Resources */,
 				C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */,
 				C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */,
 				C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */,
 				C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */,
-				C87985D4154F093A00DC03FA /* Kohicle25.ttf in Resources */,
 				C85864601553571E00D44582 /* NavigationUIViewController.xib in Resources */,
 				C85864761553575D00D44582 /* b_bleu@2x.png in Resources */,
 				C85864771553575D00D44582 /* b_jaune@2x.png in Resources */,
@@ -503,6 +525,12 @@
 				C8F12ACD1558064300DF34D7 /* item2@2x.png in Resources */,
 				C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */,
 				C86D2C8C155AEB2E0057AB5D /* item-back@2x.png in Resources */,
+				C81D5727155C4B3F00E02046 /* Kohicle25.ttf in Resources */,
+				C81D5729155C5B1F00E02046 /* back-btn@2x.png in Resources */,
+				C81D5730155C603A00E02046 /* main-button-normal@2x.png in Resources */,
+				C81D5731155C603A00E02046 /* main-button-selected@2x.png in Resources */,
+				C81D5735155C6E5F00E02046 /* tribus-bg@2x.png in Resources */,
+				C81D5737155C73F000E02046 /* triboard-customization@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +558,8 @@
 				C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */,
 				C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */,
 				C8C164391555D32700D88281 /* BagUIViewController.m in Sources */,
+				C81D577C155C849800E02046 /* TribusDataModel.xcdatamodeld in Sources */,
+				C81D577F155C84B800E02046 /* Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +682,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */,
+			);
+			currentVersion = C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */;
+			path = TribusDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C83AED4A15487BE2003EB844 /* Project object */;
 }

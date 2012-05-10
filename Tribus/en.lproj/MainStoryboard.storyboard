@@ -8,7 +8,7 @@
         <scene sceneID="lSd-3V-eaC">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvq-tt-vOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="9iW-4u-34L" customClass="TribuUIViewController" sceneMemberID="viewController">
+                <viewController title="tribu" id="9iW-4u-34L" customClass="TribuUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="RSw-7P-XaZ">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -31,7 +31,7 @@
         <scene sceneID="zqm-Sy-PtI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klZ-qu-oIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Ipr-IN-cRL" customClass="MissionUIViewController" sceneMemberID="viewController">
+                <viewController title="missions" id="Ipr-IN-cRL" customClass="MissionUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="lqP-TN-UHX">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,7 +52,7 @@
         <scene sceneID="LJn-CL-h9w">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oii-PI-nzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="qch-cS-jYk" customClass="ShopUIViewController" sceneMemberID="viewController">
+                <viewController title="échoppe" id="qch-cS-jYk" customClass="ShopUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="Wnd-zZ-hxh">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,7 +99,7 @@
         <scene sceneID="FAA-bf-SDq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTI-md-yzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Triboard" wantsFullScreenLayout="YES" id="XAb-BW-iNc" customClass="TriboardUIViewController" sceneMemberID="viewController">
+                <viewController title="triboard" wantsFullScreenLayout="YES" id="XAb-BW-iNc" customClass="TriboardUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleAspectFit" id="i6i-gU-rsd">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,6 +107,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond2@2x.png" id="z6h-db-y0Q">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tribus-bg@2x.png" id="FHb-wg-u48">
+                                <rect key="frame" x="3" y="81" width="477" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="triboard-customization@2x.png" id="cDh-uF-faJ">
+                                <rect key="frame" x="30" y="92" width="35" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -121,7 +129,7 @@
         <scene sceneID="HQe-Q5-sp5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgB-7w-hhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Inventaire" wantsFullScreenLayout="YES" id="8wW-hU-t5F" customClass="BagUIViewController" sceneMemberID="viewController">
+                <viewController title="inventaire" wantsFullScreenLayout="YES" id="8wW-hU-t5F" customClass="BagUIViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iqi-cG-b06">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,7 +150,7 @@
         <scene sceneID="sag-bO-YWJ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwq-KH-khc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="pa0-oe-nky" customClass="TravelUIViewController" sceneMemberID="viewController">
+                <viewController title="voyage" id="pa0-oe-nky" customClass="TravelUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="hyF-Tz-nD3">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -163,7 +171,7 @@
         <scene sceneID="lwd-Je-bXW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pk0-Jf-rAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="jyL-8o-Pm5" customClass="IslandUIViewController" sceneMemberID="viewController">
+                <viewController title="îles" id="jyL-8o-Pm5" customClass="IslandUIViewController" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="KGX-yV-BBQ">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -201,7 +209,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="fond1@2x.png" id="zOu-AE-7i9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="main-bg@2x.jpg" id="zOu-AE-7i9">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -209,10 +217,10 @@
                                 </accessibility>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HXl-RN-i4b">
-                                <rect key="frame" x="192" y="135" width="85" height="37"/>
+                                <rect key="frame" x="46" y="171" width="85" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Triboard">
+                                <state key="normal" title="triboard">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -224,10 +232,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xmc-T3-pKJ">
-                                <rect key="frame" x="135" y="192" width="89" height="37"/>
+                                <rect key="frame" x="195" y="171" width="90" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Missions">
+                                <state key="normal" title="missions">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -239,10 +247,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cGl-mf-K3G">
-                                <rect key="frame" x="192" y="248" width="89" height="37"/>
+                                <rect key="frame" x="341" y="171" width="89" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Échoppe">
+                                <state key="normal" title="échoppe">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -253,11 +261,11 @@
                                     <segue destination="qch-cS-jYk" kind="push" id="r03-iT-GWc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I1L-rL-D8j">
-                                <rect key="frame" x="311" y="192" width="89" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I1L-rL-D8j">
+                                <rect key="frame" x="20" y="263" width="89" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Tribu">
+                                <state key="normal" title="tribu">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -269,10 +277,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bCa-Pc-t8o">
-                                <rect key="frame" x="371" y="248" width="89" height="37"/>
+                                <rect key="frame" x="364" y="56" width="89" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Trajets">
+                                <state key="normal" title="trajets">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -284,10 +292,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mAI-jZ-bGg">
-                                <rect key="frame" x="341" y="118" width="76" height="37"/>
+                                <rect key="frame" x="377" y="263" width="76" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Îles">
+                                <state key="normal" title="îles">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -350,60 +358,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fond1@2x.png" width="960" height="640"/>
         <image name="fond2@2x.png" width="960" height="640"/>
         <image name="fond3@2x.png" width="960" height="640"/>
         <image name="item-back@2x.png" width="501" height="417"/>
+        <image name="main-bg@2x.jpg" width="960" height="640"/>
+        <image name="triboard-customization@2x.png" width="71" height="310"/>
+        <image name="tribus-bg@2x.png" width="954" height="401"/>
     </resources>
-    <classes>
-        <class className="BagUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BagUIViewController.h"/>
-        </class>
-        <class className="CustomUITabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITabBarController.h"/>
-        </class>
-        <class className="GenericUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GenericUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="viewTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="IslandUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IslandUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-            </relationships>
-        </class>
-        <class className="MainUIViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainUIViewController.h"/>
-        </class>
-        <class className="MissionUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionUIViewController.h"/>
-        </class>
-        <class className="ShopUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShopUIViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="icarousel" candidateClass="iCarousel"/>
-                <relationship kind="outlet" name="productDetail" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TravelUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TravelUIViewController.h"/>
-        </class>
-        <class className="TriboardUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TriboardUIViewController.h"/>
-        </class>
-        <class className="TribuUIViewController" superclassName="GenericUIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TribuUIViewController.h"/>
-        </class>
-        <class className="iCarousel" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/iCarousel.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dataSource"/>
-                <relationship kind="outlet" name="delegate"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

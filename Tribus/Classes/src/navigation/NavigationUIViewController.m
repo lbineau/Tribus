@@ -32,7 +32,8 @@
 
 - (void)setTitle:(NSString *)title
 {
-    pageTitle.text = [title uppercaseString];
+    //pageTitle.text = [title uppercaseString];
+    pageTitle.text = title;
 }
 
 - (void)viewDidLoad
@@ -40,7 +41,7 @@
     [super viewDidLoad];
     
     // Set title on label
-    [pageTitle setFont:[UIFont fontWithName:@"Kohicle25" size:30]];
+    [pageTitle setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
     [pageTitle setText:self.title];
     // Do any additional setup after loading the view from its nib.
 }

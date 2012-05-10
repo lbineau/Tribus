@@ -9,7 +9,8 @@
 #import "MainUIViewController.h"
 
 @implementation MainUIViewController
-
+@synthesize fetchedResultsController;
+@synthesize managedObjectContext;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,7 +33,7 @@
 {
     UIButton *button = (UIButton *)sender;
     UIViewController *vc = [segue destinationViewController];
-    vc.title = button.titleLabel.text;
+    //vc.title = button.titleLabel.text;
 }
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -46,10 +47,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     NSLog(@"%i",[pref integerForKey:@"Ligne"]);
     [pref setInteger:3 forKey:@"Ligne"];
     [pref synchronize];
+    
+    
+    /*if (managedObjectContext == nil) 
+    { 
+        managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+        NSLog(@"After managedObjectContext: %@",  managedObjectContext);
+    }*/
+    // CORE MODEL
+   /* NSManagedObjectContext *context = [self managedObjectContext];
+    Color *colorInfo = [NSEntityDescription
+                        insertNewObjectForEntityForName:@"Color" inManagedObjectContext:context];*/
+    //colorInfo.label = @"blue";
+    //NSLog(@"%@",[colorInfo valueForKey:@"label"]);
 }
 
 

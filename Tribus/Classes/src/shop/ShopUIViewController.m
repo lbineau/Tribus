@@ -103,7 +103,7 @@
 }
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
-    //3. now add animation
+    // now add animation
     [UIView beginAnimations:@"View Flip" context:nil];
     [UIView setAnimationDuration:1.25];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
