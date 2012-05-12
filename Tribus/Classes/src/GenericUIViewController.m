@@ -7,10 +7,12 @@
 //
 
 #import "GenericUIViewController.h"
+#import "AppDelegate.h"
 
 @implementation GenericUIViewController
 @synthesize viewTitleLabel;
 @synthesize navigationUIViewController;
+@synthesize fetchedResultsController=_fetchedResultsController, managedObjectContext=_managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,8 +54,45 @@
     [self addChildViewController:navigationUIViewController];
     [[self view] addSubview:navigationUIViewController.view];
     [navigationUIViewController setTitle:[self title]];
+    if (self.managedObjectContext == nil) { self.managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; }
+    // Lance un fetch pour récupérer les infos de la BDD avec fetchedResultsController
+    NSError *error;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    NSLog(@"%@",self.fetchedResultsController.fetchedObjects);
 }
 
+/*
+ A OVERRIDER pour chercher les infos que l'on veut
+ Returns the fetched results controller. Creates and configures the controller if necessary.
+ */
+- (NSFetchedResultsController *)fetchedResultsController
+{
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
+    }
+    
+    // Create and configure a fetch request with the Book entity.
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Book" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Create the sort descriptors array.
+    NSSortDescriptor *authorDescriptor = [[NSSortDescriptor alloc] initWithKey:@"author" ascending:YES];
+    NSSortDescriptor *titleDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:authorDescriptor, titleDescriptor, nil];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // Create and initialize the fetch results controller.
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"author" cacheName:@"Root"];
+    _fetchedResultsController.delegate = self;
+    
+    // Memory management.
+    
+    return _fetchedResultsController;
+}
 
 - (void)viewDidUnload
 {
@@ -61,6 +100,8 @@
     [[navigationUIViewController view] removeFromSuperview];
     [self setNavigationUIViewController:nil];
     [self setViewTitleLabel:nil];
+    [self setFetchedResultsController:nil];
+    [self setManagedObjectContext:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

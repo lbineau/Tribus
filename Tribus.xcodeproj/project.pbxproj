@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C809FCE5155EC0E800CE769B /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809FCDA155EC0E800CE769B /* AddViewController.m */; };
+		C809FCE6155EC0E800CE769B /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = C809FCDC155EC0E800CE769B /* Book.m */; };
+		C809FCE8155EC0E800CE769B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809FCE0155EC0E800CE769B /* DetailViewController.m */; };
+		C809FCE9155EC0E800CE769B /* EditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809FCE2155EC0E800CE769B /* EditingViewController.m */; };
+		C809FCEA155EC0E800CE769B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809FCE4155EC0E800CE769B /* RootViewController.m */; };
+		C809FCF8155EC17200CE769B /* CoreDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C809FCF6155EC17200CE769B /* CoreDataBase.xcdatamodeld */; };
+		C809FCFC155EC99F00CE769B /* BookStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C809FCFB155EC99F00CE769B /* BookStory.storyboard */; };
+		C809FCFE155ECAB700CE769B /* CoreDataBase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C809FCFD155ECAB700CE769B /* CoreDataBase.sqlite */; };
 		C80D15EF15489D5D00A5BB61 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C80D15ED15489D5D00A5BB61 /* MainStoryboard.storyboard */; };
 		C80ED13A15487FF4002CD0A8 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED13915487FF4002CD0A8 /* iCarousel.m */; };
 		C80ED14015488247002CD0A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80ED13F15488247002CD0A8 /* QuartzCore.framework */; };
@@ -17,7 +25,6 @@
 		C80ED1C815488582002CD0A8 /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1BA15488582002CD0A8 /* TravelUIViewController.m */; };
 		C80ED1C915488582002CD0A8 /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */; };
 		C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C015488582002CD0A8 /* TribuUIViewController.m */; };
-		C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C215488582002CD0A8 /* ViewController.m */; };
 		C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */; };
 		C81D5727155C4B3F00E02046 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81D5726155C4B3F00E02046 /* Kohicle25.ttf */; };
 		C81D5729155C5B1F00E02046 /* back-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5728155C5B1F00E02046 /* back-btn@2x.png */; };
@@ -26,8 +33,6 @@
 		C81D5735155C6E5F00E02046 /* tribus-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */; };
 		C81D5737155C73F000E02046 /* triboard-customization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5736155C73F000E02046 /* triboard-customization@2x.png */; };
 		C81D5770155C7D9300E02046 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81D576F155C7D9300E02046 /* CoreData.framework */; };
-		C81D577C155C849800E02046 /* TribusDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */; };
-		C81D577F155C84B800E02046 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D577E155C84B800E02046 /* Color.m */; };
 		C822F8211557FD0600F348C4 /* item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822F8201557FD0600F348C4 /* item@2x.png */; };
 		C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5715487BE3003EB844 /* UIKit.framework */; };
 		C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5915487BE3003EB844 /* Foundation.framework */; };
@@ -69,6 +74,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C809FCD9155EC0E800CE769B /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		C809FCDA155EC0E800CE769B /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		C809FCDB155EC0E800CE769B /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		C809FCDC155EC0E800CE769B /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		C809FCDF155EC0E800CE769B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C809FCE0155EC0E800CE769B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C809FCE1155EC0E800CE769B /* EditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditingViewController.h; sourceTree = "<group>"; };
+		C809FCE2155EC0E800CE769B /* EditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditingViewController.m; sourceTree = "<group>"; };
+		C809FCE3155EC0E800CE769B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C809FCE4155EC0E800CE769B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C809FCF7155EC17200CE769B /* CoreDataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBase.xcdatamodel; sourceTree = "<group>"; };
+		C809FCFB155EC99F00CE769B /* BookStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookStory.storyboard; sourceTree = "<group>"; };
+		C809FCFD155ECAB700CE769B /* CoreDataBase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreDataBase.sqlite; sourceTree = "<group>"; };
 		C80D15EE15489D5D00A5BB61 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Tribus/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		C80ED13815487FF4002CD0A8 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		C80ED13915487FF4002CD0A8 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -87,8 +105,6 @@
 		C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardUIViewController.m; sourceTree = "<group>"; };
 		C80ED1BF15488582002CD0A8 /* TribuUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribuUIViewController.h; sourceTree = "<group>"; };
 		C80ED1C015488582002CD0A8 /* TribuUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribuUIViewController.m; sourceTree = "<group>"; };
-		C80ED1C115488582002CD0A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C80ED1C215488582002CD0A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C815E9AA15488CDC004BB7B7 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
 		C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IslandUIViewController.m; sourceTree = "<group>"; };
 		C81D5726155C4B3F00E02046 /* Kohicle25.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kohicle25.ttf; sourceTree = "<group>"; };
@@ -98,9 +114,6 @@
 		C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
 		C81D5736155C73F000E02046 /* triboard-customization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-customization@2x.png"; sourceTree = "<group>"; };
 		C81D576F155C7D9300E02046 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TribusDataModel.xcdatamodel; sourceTree = "<group>"; };
-		C81D577D155C84B800E02046 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		C81D577E155C84B800E02046 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		C822F8201557FD0600F348C4 /* item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item@2x.png"; sourceTree = "<group>"; };
 		C83AED5315487BE3003EB844 /* Tribus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tribus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83AED5715487BE3003EB844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -167,6 +180,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C809FCD8155EC0E800CE769B /* weird */ = {
+			isa = PBXGroup;
+			children = (
+				C809FCFB155EC99F00CE769B /* BookStory.storyboard */,
+				C809FCD9155EC0E800CE769B /* AddViewController.h */,
+				C809FCDA155EC0E800CE769B /* AddViewController.m */,
+				C809FCDB155EC0E800CE769B /* Book.h */,
+				C809FCDC155EC0E800CE769B /* Book.m */,
+				C809FCDF155EC0E800CE769B /* DetailViewController.h */,
+				C809FCE0155EC0E800CE769B /* DetailViewController.m */,
+				C809FCE1155EC0E800CE769B /* EditingViewController.h */,
+				C809FCE2155EC0E800CE769B /* EditingViewController.m */,
+				C809FCE3155EC0E800CE769B /* RootViewController.h */,
+				C809FCE4155EC0E800CE769B /* RootViewController.m */,
+			);
+			path = weird;
+			sourceTree = "<group>";
+		};
 		C80ED12315487E02002CD0A8 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,8 +230,6 @@
 				C80ED1B815488582002CD0A8 /* travel */,
 				C80ED1BB15488582002CD0A8 /* triboard */,
 				C80ED1BE15488582002CD0A8 /* tribu */,
-				C80ED1C115488582002CD0A8 /* ViewController.h */,
-				C80ED1C215488582002CD0A8 /* ViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -357,6 +386,7 @@
 		C83AED5D15487BE3003EB844 /* Tribus */ = {
 			isa = PBXGroup;
 			children = (
+				C809FCFD155ECAB700CE769B /* CoreDataBase.sqlite */,
 				C887045A154F327900F05757 /* Models */,
 				C83AED7D15487C98003EB844 /* Bin */,
 				C83AED7E15487C98003EB844 /* Classes */,
@@ -390,6 +420,7 @@
 		C83AED7E15487C98003EB844 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C809FCD8155EC0E800CE769B /* weird */,
 				C80ED12315487E02002CD0A8 /* libs */,
 				C80ED12715487E02002CD0A8 /* src */,
 			);
@@ -431,9 +462,7 @@
 		C887045A154F327900F05757 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */,
-				C81D577D155C84B800E02046 /* Color.h */,
-				C81D577E155C84B800E02046 /* Color.m */,
+				C809FCF6155EC17200CE769B /* CoreDataBase.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -531,6 +560,8 @@
 				C81D5731155C603A00E02046 /* main-button-selected@2x.png in Resources */,
 				C81D5735155C6E5F00E02046 /* tribus-bg@2x.png in Resources */,
 				C81D5737155C73F000E02046 /* triboard-customization@2x.png in Resources */,
+				C809FCFC155EC99F00CE769B /* BookStory.storyboard in Resources */,
+				C809FCFE155ECAB700CE769B /* CoreDataBase.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,15 +582,18 @@
 				C80ED1C815488582002CD0A8 /* TravelUIViewController.m in Sources */,
 				C80ED1C915488582002CD0A8 /* TriboardUIViewController.m in Sources */,
 				C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */,
-				C80ED1CB15488582002CD0A8 /* ViewController.m in Sources */,
 				C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */,
 				C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */,
 				C85864611553571E00D44582 /* UntouchableUIView.m in Sources */,
 				C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */,
 				C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */,
 				C8C164391555D32700D88281 /* BagUIViewController.m in Sources */,
-				C81D577C155C849800E02046 /* TribusDataModel.xcdatamodeld in Sources */,
-				C81D577F155C84B800E02046 /* Color.m in Sources */,
+				C809FCE5155EC0E800CE769B /* AddViewController.m in Sources */,
+				C809FCE6155EC0E800CE769B /* Book.m in Sources */,
+				C809FCE8155EC0E800CE769B /* DetailViewController.m in Sources */,
+				C809FCE9155EC0E800CE769B /* EditingViewController.m in Sources */,
+				C809FCEA155EC0E800CE769B /* RootViewController.m in Sources */,
+				C809FCF8155EC17200CE769B /* CoreDataBase.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,13 +718,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C81D577A155C849800E02046 /* TribusDataModel.xcdatamodeld */ = {
+		C809FCF6155EC17200CE769B /* CoreDataBase.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */,
+				C809FCF7155EC17200CE769B /* CoreDataBase.xcdatamodel */,
 			);
-			currentVersion = C81D577B155C849800E02046 /* TribusDataModel.xcdatamodel */;
-			path = TribusDataModel.xcdatamodeld;
+			currentVersion = C809FCF7155EC17200CE769B /* CoreDataBase.xcdatamodel */;
+			path = CoreDataBase.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

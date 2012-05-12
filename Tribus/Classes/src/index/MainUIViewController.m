@@ -9,8 +9,6 @@
 #import "MainUIViewController.h"
 
 @implementation MainUIViewController
-@synthesize fetchedResultsController;
-@synthesize managedObjectContext;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,8 +29,8 @@
 #pragma mark - View lifecycle
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    UIButton *button = (UIButton *)sender;
-    UIViewController *vc = [segue destinationViewController];
+    //UIButton *button = (UIButton *)sender;
+    //UIViewController *vc = [segue destinationViewController];
     //vc.title = button.titleLabel.text;
 }
 /*
@@ -53,19 +51,6 @@
     NSLog(@"%i",[pref integerForKey:@"Ligne"]);
     [pref setInteger:3 forKey:@"Ligne"];
     [pref synchronize];
-    
-    
-    /*if (managedObjectContext == nil) 
-    { 
-        managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
-        NSLog(@"After managedObjectContext: %@",  managedObjectContext);
-    }*/
-    // CORE MODEL
-   /* NSManagedObjectContext *context = [self managedObjectContext];
-    Color *colorInfo = [NSEntityDescription
-                        insertNewObjectForEntityForName:@"Color" inManagedObjectContext:context];*/
-    //colorInfo.label = @"blue";
-    //NSLog(@"%@",[colorInfo valueForKey:@"label"]);
 }
 
 
