@@ -11,12 +11,10 @@
 
 #import "NavigationUIViewController.h"
 
-@interface GenericUIViewController : UIViewController <NSFetchedResultsControllerDelegate>{
+@interface GenericUIViewController : UIViewController{
     NavigationUIViewController *navigationUIViewController;
     UIView *viewBackButton;
 }
 @property (weak, nonatomic) IBOutlet UILabel *viewTitleLabel;
 @property (nonatomic,retain) NavigationUIViewController *navigationUIViewController;
-@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @end

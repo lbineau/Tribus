@@ -7,47 +7,50 @@
 //
 
 #import "ShopUIViewController.h"
+#import "SBJson.h"
+#import "ShopItemUIController.h"
 
 @implementation ShopUIViewController
 
 @synthesize productDetail;
 @synthesize icarousel;
-@synthesize items;
 @synthesize itemDatas;
 
 - (void)awakeFromNib
 {
+    // Creation du parser
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"motif" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:jsonPath];
+    
+    // On récupère le JSON en NSString depuis la réponse
+    NSString *json_string = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    // on parse la reponse JSON
+    NSArray *res = [parser objectWithString:json_string error:nil];
+    
+    self.itemDatas = [[NSMutableDictionary alloc] init];
+    
     //set up data
     //your carousel should always be driven by an array of
     //data of some kind - don't store data in your item views
     //or the recycling mechanism will destroy your data once
     //your item views move off-screen
-    self.items = [NSMutableArray arrayWithObjects:
-                  @"green",
-                  @"blue",
-                  @"red",
-                  @"yellow",
-                  nil];
-    
-    self.itemDatas = [[NSMutableDictionary alloc] init];
-    
-    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
-                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
-                  forKey:[items objectAtIndex:0]];
-    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
-                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
-                  forKey:[items objectAtIndex:1]];
-    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
-                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
-                  forKey:[items objectAtIndex:2]];
-    [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"item2.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
-                          [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
-                  forKey:[items objectAtIndex:3]];
-    
+    for (NSDictionary *obj in res)
+    {
+        // on peut recuperer les valeurs en utilisant objectForKey à partir du status qui est un NSDictionary
+        for (id key in [obj objectForKey:@"price"])
+        {
+            id value = [[obj objectForKey:@"price"] objectForKey:key];
+            NSLog(@"%@ : %@", key, value);
+        }
+        [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
+         [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"],@"item2.png",[obj objectForKey:@"price"],nil] forKeys:
+         [[NSArray alloc] initWithObjects:@"title", @"description",@"path",@"colors",nil]]
+         forKey:[obj objectForKey:@"id"]];
+    }
+    NSLog(@"%@",itemDatas);   
 }
 
 #pragma mark -
@@ -72,8 +75,6 @@
     icarousel.dataSource = nil;
     
     icarousel = nil;
-    [items removeAllObjects];
-    items = nil;
     [itemDatas removeAllObjects];
     itemDatas = nil;
     
@@ -90,16 +91,16 @@
 }
 - (void)carouselDidScroll:(iCarousel *)carousel{
     
-    NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:carousel.currentItemIndex]];
+    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", carousel.currentItemIndex]];
 
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 300.0;
+    return 400.0;
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     //return the total number of items in the carousel
-    return [items count];
+    return [itemDatas count];
 }
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
@@ -123,11 +124,18 @@
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
 {    
-    NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:index]];
+    NSMutableDictionary *currentItem = [itemDatas objectForKey:[NSString stringWithFormat:@"%d", index]];
     //create new view if no view is available for recycling
     if (view == nil)
     {
-        view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
+        ShopItemUIController *viewController =[[ShopItemUIController alloc] initWithNibName:@"ShopItemUIController" bundle:nil];
+        [currentItem setValue:viewController forKey:@"controller"];
+        view = viewController.view;
+
+        [viewController.titleLabel setText:[currentItem valueForKey:@"title"]];
+        [viewController.descLabel setText:[currentItem valueForKey:@"description"]];
+        [viewController.imageView setImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
+        //view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[currentItem valueForKey:@"path"]]];
         view.layer.doubleSided = NO; //prevent back side of view from showing
     }
     
