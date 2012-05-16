@@ -48,12 +48,13 @@
 
 #import <CoreData/CoreData.h>
 #import "AppDelegate.h"
+#import "ColorUIViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window=_window;
 @synthesize managedObjectModel=_managedObjectModel, managedObjectContext=_managedObjectContext, persistentStoreCoordinator=_persistentStoreCoordinator;
-
+@synthesize colorController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -68,6 +69,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"MAIN");
+    colorController = [[ColorUIViewController alloc] init];
     // Override point for customization after application launch.
     return YES;
 }

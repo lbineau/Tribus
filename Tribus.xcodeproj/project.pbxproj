@@ -27,6 +27,8 @@
 		C81D5735155C6E5F00E02046 /* tribus-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */; };
 		C81D5737155C73F000E02046 /* triboard-customization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81D5736155C73F000E02046 /* triboard-customization@2x.png */; };
 		C81D5770155C7D9300E02046 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81D576F155C7D9300E02046 /* CoreData.framework */; };
+		C81EEFEB1560E3730060C513 /* Tw Cen MT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81EEFEA1560E3730060C513 /* Tw Cen MT.ttf */; };
+		C81EEFEE156140FB0060C513 /* item2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C81EEFED156140FB0060C513 /* item2@2x.png */; };
 		C822F8211557FD0600F348C4 /* item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822F8201557FD0600F348C4 /* item@2x.png */; };
 		C83AED5815487BE3003EB844 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5715487BE3003EB844 /* UIKit.framework */; };
 		C83AED5A15487BE3003EB844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83AED5915487BE3003EB844 /* Foundation.framework */; };
@@ -56,10 +58,10 @@
 		C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85864731553575D00D44582 /* main-bg@2x.jpg */; };
 		C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */; };
 		C86D2C8C155AEB2E0057AB5D /* item-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C86D2C8B155AEB2E0057AB5D /* item-back@2x.png */; };
-		C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */; };
-		C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */; };
-		C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */; };
-		C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */; };
+		C88026D715614BCC0093F50A /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C88026D615614BCC0093F50A /* Color.m */; };
+		C880F3F81563D96600C2A974 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = C880F3F71563D96600C2A974 /* color.json */; };
+		C881354D1563C2690085FFF6 /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C881354B1563C2690085FFF6 /* ColorUIViewController.m */; };
+		C881354E1563C2690085FFF6 /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881354C1563C2690085FFF6 /* ColorUIViewController.xib */; };
 		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
 		C8CF002A15603D0D00AE8677 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001215603D0D00AE8677 /* NSObject+SBJson.m */; };
 		C8CF002B15603D0D00AE8677 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001515603D0D00AE8677 /* SBJsonParser.m */; };
@@ -79,7 +81,6 @@
 		C8CF0041156075EE00AE8677 /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CF003F156075EE00AE8677 /* ShopItemUIController.xib */; };
 		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
-		C8F12ACD1558064300DF34D7 /* item2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACC1558064300DF34D7 /* item2@2x.png */; };
 		C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACF1558103C00DF34D7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,8 @@
 		C81D5734155C6E5F00E02046 /* tribus-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tribus-bg@2x.png"; sourceTree = "<group>"; };
 		C81D5736155C73F000E02046 /* triboard-customization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triboard-customization@2x.png"; sourceTree = "<group>"; };
 		C81D576F155C7D9300E02046 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C81EEFEA1560E3730060C513 /* Tw Cen MT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT.ttf"; sourceTree = "<group>"; };
+		C81EEFED156140FB0060C513 /* item2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item2@2x.png"; sourceTree = "<group>"; };
 		C822F8201557FD0600F348C4 /* item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item@2x.png"; sourceTree = "<group>"; };
 		C83AED5315487BE3003EB844 /* Tribus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tribus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83AED5715487BE3003EB844 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -149,10 +152,12 @@
 		C868F5DC1555A8BA00CF03BB /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = "<group>"; };
 		C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = "<group>"; };
 		C86D2C8B155AEB2E0057AB5D /* item-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-back@2x.png"; sourceTree = "<group>"; };
-		C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Bold.otf"; sourceTree = "<group>"; };
-		C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Light.otf"; sourceTree = "<group>"; };
-		C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Regular.otf"; sourceTree = "<group>"; };
-		C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YanoneKaffeesatz-Thin.otf"; sourceTree = "<group>"; };
+		C88026D515614BCC0093F50A /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		C88026D615614BCC0093F50A /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		C880F3F71563D96600C2A974 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
+		C881354A1563C2690085FFF6 /* ColorUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIViewController.h; sourceTree = "<group>"; };
+		C881354B1563C2690085FFF6 /* ColorUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIViewController.m; sourceTree = "<group>"; };
+		C881354C1563C2690085FFF6 /* ColorUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorUIViewController.xib; sourceTree = "<group>"; };
 		C8C164371555D32700D88281 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
 		C8C164381555D32700D88281 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
 		C8CF001115603D0D00AE8677 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -188,7 +193,6 @@
 		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
 		C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
 		C8CF69E81553CFFE005AE1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		C8F12ACC1558064300DF34D7 /* item2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item2@2x.png"; sourceTree = "<group>"; };
 		C8F12ACF1558103C00DF34D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +235,7 @@
 		C80ED12715487E02002CD0A8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C88135481563C1BF0085FFF6 /* color */,
 				C815E9A915488CC5004BB7B7 /* island */,
 				C80ED1A915488581002CD0A8 /* game */,
 				C80ED1AA15488582002CD0A8 /* GenericUIViewController.h */,
@@ -338,10 +343,10 @@
 		C815E9B315489678004BB7B7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C81EEFED156140FB0060C513 /* item2@2x.png */,
 				C81D572E155C603A00E02046 /* main-button-normal@2x.png */,
 				C81D572F155C603A00E02046 /* main-button-selected@2x.png */,
 				C81D5728155C5B1F00E02046 /* back-btn@2x.png */,
-				C8F12ACC1558064300DF34D7 /* item2@2x.png */,
 				C81D5736155C73F000E02046 /* triboard-customization@2x.png */,
 				C822F8201557FD0600F348C4 /* item@2x.png */,
 				C85864631553575D00D44582 /* b_bleu@2x.png */,
@@ -463,15 +468,24 @@
 		C87985C9154F06E600DC03FA /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C81EEFEA1560E3730060C513 /* Tw Cen MT.ttf */,
 				C81D5726155C4B3F00E02046 /* Kohicle25.ttf */,
-				C87985CA154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf */,
-				C87985CB154F06E600DC03FA /* YanoneKaffeesatz-Light.otf */,
-				C87985CC154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf */,
-				C87985CD154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf */,
 			);
 			name = fonts;
 			path = Tribus/Resources/fonts;
 			sourceTree = SOURCE_ROOT;
+		};
+		C88135481563C1BF0085FFF6 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				C88026D515614BCC0093F50A /* Color.h */,
+				C88026D615614BCC0093F50A /* Color.m */,
+				C881354A1563C2690085FFF6 /* ColorUIViewController.h */,
+				C881354B1563C2690085FFF6 /* ColorUIViewController.m */,
+				C881354C1563C2690085FFF6 /* ColorUIViewController.xib */,
+			);
+			path = color;
+			sourceTree = "<group>";
 		};
 		C887045A154F327900F05757 /* Models */ = {
 			isa = PBXGroup;
@@ -479,6 +493,7 @@
 				C8CF003715603DC800AE8677 /* motif.json */,
 				C8CF00391560484A00AE8677 /* mission.json */,
 				C809FCF6155EC17200CE769B /* CoreDataBase.xcdatamodeld */,
+				C880F3F71563D96600C2A974 /* color.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -576,10 +591,6 @@
 			files = (
 				C83AED6215487BE3003EB844 /* InfoPlist.strings in Resources */,
 				C80D15EF15489D5D00A5BB61 /* MainStoryboard.storyboard in Resources */,
-				C87985CE154F06E600DC03FA /* YanoneKaffeesatz-Bold.otf in Resources */,
-				C87985CF154F06E600DC03FA /* YanoneKaffeesatz-Light.otf in Resources */,
-				C87985D0154F06E600DC03FA /* YanoneKaffeesatz-Regular.otf in Resources */,
-				C87985D1154F06E600DC03FA /* YanoneKaffeesatz-Thin.otf in Resources */,
 				C85864601553571E00D44582 /* NavigationUIViewController.xib in Resources */,
 				C85864761553575D00D44582 /* b_bleu@2x.png in Resources */,
 				C85864771553575D00D44582 /* b_jaune@2x.png in Resources */,
@@ -599,7 +610,6 @@
 				C85864851553575D00D44582 /* ile_violette@2x.png in Resources */,
 				C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */,
 				C822F8211557FD0600F348C4 /* item@2x.png in Resources */,
-				C8F12ACD1558064300DF34D7 /* item2@2x.png in Resources */,
 				C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */,
 				C86D2C8C155AEB2E0057AB5D /* item-back@2x.png in Resources */,
 				C81D5727155C4B3F00E02046 /* Kohicle25.ttf in Resources */,
@@ -612,6 +622,10 @@
 				C8CF003815603DC800AE8677 /* motif.json in Resources */,
 				C8CF003A1560484A00AE8677 /* mission.json in Resources */,
 				C8CF0041156075EE00AE8677 /* ShopItemUIController.xib in Resources */,
+				C81EEFEB1560E3730060C513 /* Tw Cen MT.ttf in Resources */,
+				C81EEFEE156140FB0060C513 /* item2@2x.png in Resources */,
+				C881354E1563C2690085FFF6 /* ColorUIViewController.xib in Resources */,
+				C880F3F81563D96600C2A974 /* color.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +666,8 @@
 				C8CF003415603D0D00AE8677 /* SBJsonUTF8Stream.m in Sources */,
 				C8CF003515603D0D00AE8677 /* SBJsonWriter.m in Sources */,
 				C8CF0040156075EE00AE8677 /* ShopItemUIController.m in Sources */,
+				C88026D715614BCC0093F50A /* Color.m in Sources */,
+				C881354D1563C2690085FFF6 /* ColorUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

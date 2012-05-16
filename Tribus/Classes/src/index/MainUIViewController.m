@@ -45,12 +45,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    
-    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
-    NSLog(@"%i",[pref integerForKey:@"Ligne"]);
-    [pref setInteger:3 forKey:@"Ligne"];
-    [pref synchronize];
 }
 
 

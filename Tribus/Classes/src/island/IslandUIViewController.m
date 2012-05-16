@@ -7,7 +7,7 @@
 //
 
 #import "IslandUIViewController.h"
-
+#import "Color.h"
 @implementation IslandUIViewController
 
 @synthesize islandTitle;
@@ -34,35 +34,34 @@
     self.itemDatas = [[NSMutableDictionary alloc] init];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x445132), @"ile_verte.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc] initWithId:@"blue" andCode:@"0x445132" andLabel:@"Verte"], @"ile_verte.png",@"<b>Hilja</b>, l'île dansante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:0]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0xA8510C), @"ile_orange.png",@"<b>Oren</b>, l'île dormante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0xA8510C" andLabel:@"Orange"], @"ile_orange.png",@"<b>Oren</b>, l'île dormante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:1]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x8D5D2E), @"ile_jaune.png",@"<b>Isfar</b>, l'île sablonneuse",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x8D5D2E" andLabel:@"Jaune"], @"ile_jaune.png",@"<b>Isfar</b>, l'île sablonneuse",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:2]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0xAD2304), @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x8D5D2E" andLabel:@"Rouge"], @"ile_rouge.png",@"<b>Tneera</b>, l'île fumante",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:3]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x3B4444), @"ile_bleue.png",@"<b>Pancada</b>, l'île cristaline",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x3B4444" andLabel:@"Rouge"], @"ile_bleue.png",@"<b>Pancada</b>, l'île cristaline",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:4]];
     
     [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
-                          [[NSArray alloc] initWithObjects:UIColorFromRGB(0x582E97), @"ile_violette.png",@"<b>Bahlû</b>, l'île sombre",nil] forKeys:
+                          [[NSArray alloc] initWithObjects:[[Color alloc]  initWithId:@"blue" andCode:@"0x582E97" andLabel:@"Rouge"], @"ile_violette.png",@"<b>Bahlû</b>, l'île sombre",nil] forKeys:
                           [[NSArray alloc] initWithObjects:@"color", @"path",@"title",nil]]
                   forKey:[items objectAtIndex:5]];
-
 }
 
 #pragma mark -
@@ -84,6 +83,10 @@
     islandTitle.font = [UIFont fontWithName:@"Kohicle25" size:25];
     islandTitle.fontBold = [UIFont fontWithName:@"Kohicle25" size:40];
     [self.view addSubview:islandTitle];
+    
+    NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:icarousel.currentItemIndex]];
+    islandTitle.text = [currentItem valueForKey:@"title"];
+    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
 }
 
 - (void)viewDidUnload
@@ -131,11 +134,12 @@
     //views outside of the `if (view == nil) {...}` check otherwise
     //you'll get weird issues with carousel item content appearing
     //in the wrong place in the carousel
+//    [[NSColor alloc] initWithCIColor:<#(CIColor *)#>]
+}
+-(void) carouselCurrentItemIndexUpdated:(iCarousel *)carousel{
     NSMutableDictionary *currentItem = [itemDatas objectForKey:[items objectAtIndex:carousel.currentItemIndex]];
     islandTitle.text = [currentItem valueForKey:@"title"];
-
-    islandTitle.textColor = [currentItem valueForKey:@"color"];
-//    [[NSColor alloc] initWithCIColor:<#(CIColor *)#>]
+    islandTitle.textColor = [(Color *)[currentItem valueForKey:@"color"] color];
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel

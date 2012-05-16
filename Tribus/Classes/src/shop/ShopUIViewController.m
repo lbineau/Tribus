@@ -61,11 +61,11 @@
     [super viewDidLoad];
     
     //configure carousel
-    icarousel.type = iCarouselTypeLinear;
+    icarousel.type = iCarouselTypeRotary;
     [icarousel.currentItemView addSubview:self.productDetail];
     [productDetail setFrame:icarousel.currentItemView.frame];
     [productDetail setHidden:YES];
-    //[icarousel setContentOffset:CGSizeMake(-50, 0)];
+    //[icarousel setContentOffset:CGSizeMake(-100, 0)];
 }
 
 - (void)viewDidUnload
@@ -84,6 +84,24 @@
 
 #pragma mark -
 #pragma mark iCarousel methods
+- (CGFloat)carousel:(iCarousel *)carousel valueForTransformOption:(iCarouselTranformOption)option withDefault:(CGFloat)value
+{
+    switch (option)
+    {
+        case iCarouselTranformOptionArc:
+        {
+            return 2 * M_PI * 1;
+        }
+        case iCarouselTranformOptionRadius:
+        {
+            return value * 1.5;
+        }
+        default:
+        {
+            return value;
+        }
+    }
+}
 
 - (void)carouselWillBeginScrollingAnimation:(iCarousel *)carousel{
     
@@ -95,7 +113,7 @@
 
 }
 -(CGFloat)carouselItemWidth:(iCarousel *)carousel{
-    return 400.0;
+    return 250.0;
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
@@ -104,9 +122,10 @@
 }
 
 - (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    
     // now add animation
-    [UIView beginAnimations:@"View Flip" context:nil];
-    [UIView setAnimationDuration:1.25];
+    /*[UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:0.5];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     if(index == carousel.currentItemIndex){
         
@@ -119,7 +138,7 @@
         [productDetail setFrame:carousel.currentItemView.frame];
     } else {
     }
-    [UIView commitAnimations];
+    [UIView commitAnimations];*/
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view
