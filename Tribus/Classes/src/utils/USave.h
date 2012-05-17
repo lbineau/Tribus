@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface USave : NSObject
-
++ (void)initSettingsDefaults;
 @end

@@ -15,6 +15,8 @@
 @synthesize colorValue;
 
 - (id)initWithId:(NSString *)colorId andCode:(NSString *)code andLabel:(NSString *)label{
+    self = [super init];
+    
     self.colorId = colorId;
     self.color = [Color colorWithHexString:code];
     self.label = label;

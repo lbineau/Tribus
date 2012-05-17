@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import "ColorUIViewController.h"
+#import "ColorManager.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong, readonly) NSManagedObjectModel *managedObjectModel;
@@ -7,7 +7,7 @@
 @property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) ColorUIViewController *colorController;
+@property (strong, nonatomic) ColorManager *colorManager;
 
 - (NSURL *)applicationDocumentsDirectory;
 - (void)saveContext;

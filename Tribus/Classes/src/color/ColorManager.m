@@ -6,25 +6,17 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ColorUIViewController.h"
+#import "ColorManager.h"
 #import "Color.h"
 #import "SBJson.h"
 
-@implementation ColorUIViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation ColorManager
+@synthesize colorDictionnary;
 
 - (id)init
 {
     self = [super init];
-
+    colorDictionnary = [[NSMutableDictionary alloc] init];
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     
     // Creation du parser
@@ -41,47 +33,42 @@
     for (NSDictionary *obj in res){
 
         Color *color = [[Color alloc] initWithId:[obj valueForKey:@"id"] andCode:[obj valueForKey:@"code"] andLabel:[obj valueForKey:@"label"]];
-        
-        if([pref integerForKey:color.colorId] == 0){
-            [pref setInteger:[obj valueForKey:@"defaultValue"] forKey:color.colorId];            
+
+        if([pref boolForKey:@"resetApp"] || [pref valueForKey:color.colorId] == nil){
+            [pref setValue:[obj valueForKey:@"defaultValue"] forKey:color.colorId];            
+            [pref synchronize];
         }
         
-        color.colorValue = [pref integerForKey:color.colorId];
+        color.colorValue = [pref valueForKey:color.colorId];
+        NSLog(@"%@",color.colorValue);
         
+        [colorDictionnary setValue:color forKey:color.colorId];
     }
-    [pref synchronize];
     
     return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+- (void) addPoints:(int) points forColorId:(NSString*) colorId{
+    Color *color = [colorDictionnary valueForKey:colorId];
+    color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue + points)];
+    [self saveColorId:colorId];
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Do any additional setup after loading the view from its nib.
+- (void) removePoints:(int) points forColorId:(NSString*) colorId{
+    Color *color = [colorDictionnary valueForKey:colorId];
+    // 0 security
+    if(color.colorValue.integerValue - points >= 0)
+        color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
+    else
+        color.colorValue = [NSNumber numberWithInt:0];
+    [self saveColorId:colorId];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void) saveColorId:(NSString*) colorId{
+    NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
+    Color *color = [colorDictionnary valueForKey:colorId];
+    [pref setValue:color.colorValue forKey:color.colorId];            
+    [pref synchronize];
 }
 
 @end

@@ -48,13 +48,16 @@
 
 #import <CoreData/CoreData.h>
 #import "AppDelegate.h"
-#import "ColorUIViewController.h"
+#import "ColorManager.h"
+#import "USave.h"
+
+#define kVersionNumber   @"1.00"      // Fill in your current version number here
 
 @implementation AppDelegate
 
 @synthesize window=_window;
 @synthesize managedObjectModel=_managedObjectModel, managedObjectContext=_managedObjectContext, persistentStoreCoordinator=_persistentStoreCoordinator;
-@synthesize colorController;
+@synthesize colorManager;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -69,7 +72,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"MAIN");
-    colorController = [[ColorUIViewController alloc] init];
+    // Set the application defaults from the Settings.bundle
+    [USave initSettingsDefaults];
+
+    colorManager = [[ColorManager alloc] init];
+    [colorManager addPoints:50 forColorId:@"blue"];
     // Override point for customization after application launch.
     return YES;
 }

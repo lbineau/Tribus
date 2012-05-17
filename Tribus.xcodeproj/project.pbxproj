@@ -56,11 +56,12 @@
 		C85864841553575D00D44582 /* ile_verte@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864711553575D00D44582 /* ile_verte@2x.png */; };
 		C85864851553575D00D44582 /* ile_violette@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C85864721553575D00D44582 /* ile_violette@2x.png */; };
 		C85864861553575D00D44582 /* main-bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85864731553575D00D44582 /* main-bg@2x.jpg */; };
+		C85D452E1565624D00A5CC97 /* USave.m in Sources */ = {isa = PBXBuildFile; fileRef = C85D452D1565624D00A5CC97 /* USave.m */; };
 		C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */; };
 		C86D2C8C155AEB2E0057AB5D /* item-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C86D2C8B155AEB2E0057AB5D /* item-back@2x.png */; };
 		C88026D715614BCC0093F50A /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = C88026D615614BCC0093F50A /* Color.m */; };
 		C880F3F81563D96600C2A974 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = C880F3F71563D96600C2A974 /* color.json */; };
-		C881354D1563C2690085FFF6 /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C881354B1563C2690085FFF6 /* ColorUIViewController.m */; };
+		C881354D1563C2690085FFF6 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C881354B1563C2690085FFF6 /* ColorManager.m */; };
 		C881354E1563C2690085FFF6 /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881354C1563C2690085FFF6 /* ColorUIViewController.xib */; };
 		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
 		C8CF002A15603D0D00AE8677 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001215603D0D00AE8677 /* NSObject+SBJson.m */; };
@@ -149,14 +150,16 @@
 		C85864711553575D00D44582 /* ile_verte@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_verte@2x.png"; sourceTree = "<group>"; };
 		C85864721553575D00D44582 /* ile_violette@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ile_violette@2x.png"; sourceTree = "<group>"; };
 		C85864731553575D00D44582 /* main-bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-bg@2x.jpg"; sourceTree = "<group>"; };
+		C85D452C1565624D00A5CC97 /* USave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USave.h; sourceTree = "<group>"; };
+		C85D452D1565624D00A5CC97 /* USave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USave.m; sourceTree = "<group>"; };
 		C868F5DC1555A8BA00CF03BB /* CustomUITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUITabBarController.h; sourceTree = "<group>"; };
 		C868F5DD1555A8BA00CF03BB /* CustomUITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUITabBarController.m; sourceTree = "<group>"; };
 		C86D2C8B155AEB2E0057AB5D /* item-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item-back@2x.png"; sourceTree = "<group>"; };
 		C88026D515614BCC0093F50A /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		C88026D615614BCC0093F50A /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		C880F3F71563D96600C2A974 /* color.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
-		C881354A1563C2690085FFF6 /* ColorUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIViewController.h; sourceTree = "<group>"; };
-		C881354B1563C2690085FFF6 /* ColorUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIViewController.m; sourceTree = "<group>"; };
+		C881354A1563C2690085FFF6 /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
+		C881354B1563C2690085FFF6 /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
 		C881354C1563C2690085FFF6 /* ColorUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorUIViewController.xib; sourceTree = "<group>"; };
 		C8C164371555D32700D88281 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
 		C8C164381555D32700D88281 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 		C80ED12715487E02002CD0A8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C85D452B156561E200A5CC97 /* utils */,
 				C88135481563C1BF0085FFF6 /* color */,
 				C815E9A915488CC5004BB7B7 /* island */,
 				C80ED1A915488581002CD0A8 /* game */,
@@ -457,6 +461,15 @@
 			path = Ressources;
 			sourceTree = "<group>";
 		};
+		C85D452B156561E200A5CC97 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C85D452C1565624D00A5CC97 /* USave.h */,
+				C85D452D1565624D00A5CC97 /* USave.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		C8683ABD15488A08000062AC /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,8 +493,8 @@
 			children = (
 				C88026D515614BCC0093F50A /* Color.h */,
 				C88026D615614BCC0093F50A /* Color.m */,
-				C881354A1563C2690085FFF6 /* ColorUIViewController.h */,
-				C881354B1563C2690085FFF6 /* ColorUIViewController.m */,
+				C881354A1563C2690085FFF6 /* ColorManager.h */,
+				C881354B1563C2690085FFF6 /* ColorManager.m */,
 				C881354C1563C2690085FFF6 /* ColorUIViewController.xib */,
 			);
 			path = color;
@@ -667,7 +680,8 @@
 				C8CF003515603D0D00AE8677 /* SBJsonWriter.m in Sources */,
 				C8CF0040156075EE00AE8677 /* ShopItemUIController.m in Sources */,
 				C88026D715614BCC0093F50A /* Color.m in Sources */,
-				C881354D1563C2690085FFF6 /* ColorUIViewController.m in Sources */,
+				C881354D1563C2690085FFF6 /* ColorManager.m in Sources */,
+				C85D452E1565624D00A5CC97 /* USave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

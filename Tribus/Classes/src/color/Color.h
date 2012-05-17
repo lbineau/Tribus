@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Color : NSObject
-@property (strong, nonatomic) NSString *colorId;
+@property (strong, nonatomic) NSString *colorId; // blue, yellow, red, green, orange, purple
 @property (strong, nonatomic) NSString *label;
 @property (strong, nonatomic) UIColor *color;
-@property NSInteger colorValue;
+@property (strong, nonatomic) NSNumber *colorValue;
 
 - (id)initWithId:(NSString *)colorId andCode:(NSString *)code andLabel:(NSString *)label;
+
 + (UIColor *) colorWithHexString: (NSString *) stringToConvert;
 @end

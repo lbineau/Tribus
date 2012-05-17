@@ -43,14 +43,13 @@
         for (id key in [obj objectForKey:@"price"])
         {
             id value = [[obj objectForKey:@"price"] objectForKey:key];
-            NSLog(@"%@ : %@", key, value);
+            //NSLog(@"%@ : %@", key, value);
         }
         [itemDatas setObject:[[NSMutableDictionary alloc] initWithObjects:
          [[NSArray alloc] initWithObjects:[obj objectForKey:@"title"], [obj objectForKey:@"description"],@"item2.png",[obj objectForKey:@"price"],nil] forKeys:
          [[NSArray alloc] initWithObjects:@"title", @"description",@"path",@"colors",nil]]
          forKey:[obj objectForKey:@"id"]];
     }
-    NSLog(@"%@",itemDatas);   
 }
 
 #pragma mark -

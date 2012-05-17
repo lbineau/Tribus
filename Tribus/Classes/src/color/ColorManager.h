@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ColorUIViewController : UIViewController
+@interface ColorManager : NSObject
+
+@property (strong, nonatomic) NSMutableDictionary *colorDictionnary;
+- (void) addPoints:(int) points forColorId:(NSString*) colorId;
+- (void) removePoints:(int) points forColorId:(NSString*) colorId;
+- (void) saveColorId:(NSString*) colorId;
 
 @end
