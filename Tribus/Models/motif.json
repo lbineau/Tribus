@@ -1,16 +1,16 @@
- [{
-  "id":"0",
-  "title":"motif basique",
-  "description": "une bonne base sans aucun doute",
-  "price":{"purple":10}
-  },{
-  "id":"1",
-  "title":"motif guerrier",
-  "description": "ça envoi le paté !",
-  "price":{"blue":14,"yellow":60}
-  },{
-  "id":"2",
-  "title":"motif guerrier",
-  "description": "ça envoi le paté !",
-  "price":{"blue":14,"yellow":60}
-  }]
+[{
+ "id":"0",
+ "title":"motif basique",
+ "description": "une bonne base sans aucun doute",
+ "price":{"purple":10}
+ },{
+ "id":"1",
+ "title":"motif guerrier",
+ "description": "ça envoi le paté !",
+ "price":{"blue":14,"yellow":60}
+ },{
+ "id":"2",
+ "title":"motif guerrier",
+ "description": "ça envoi le paté !",
+ "price":{"blue":14,"yellow":60}
+ }]

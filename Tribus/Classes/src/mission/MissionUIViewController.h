@@ -7,7 +7,10 @@
 //
 
 #import "GenericUIViewController.h"
+#import "iCarousel.h"
 
-@interface MissionUIViewController : GenericUIViewController
+@interface MissionUIViewController : GenericUIViewController<iCarouselDataSource,iCarouselDelegate>;
+@property (nonatomic, retain) NSMutableDictionary *itemDatas;
+@property (weak, nonatomic) IBOutlet iCarousel *icarousel;
 
 @end

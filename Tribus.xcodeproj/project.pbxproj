@@ -82,6 +82,11 @@
 		C8CF0041156075EE00AE8677 /* ShopItemUIController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CF003F156075EE00AE8677 /* ShopItemUIController.xib */; };
 		C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C8CF69E91553CFFE005AE1E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF69E81553CFFE005AE1E6 /* CoreText.framework */; };
+		C8D4D6CD15659452003AF41C /* MissionItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D4D6CB15659452003AF41C /* MissionItemUIViewController.m */; };
+		C8D4D6CE15659452003AF41C /* MissionItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6CC15659452003AF41C /* MissionItemUIViewController.xib */; };
+		C8D4D6D115659564003AF41C /* mission-item.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D015659564003AF41C /* mission-item.png */; };
+		C8D4D6D4156596C7003AF41C /* mission-item-ok-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D2156596C7003AF41C /* mission-item-ok-bg.png */; };
+		C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D3156596C7003AF41C /* mission-item-ok.png */; };
 		C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACF1558103C00DF34D7 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +201,12 @@
 		C8CF69E41553CCF9005AE1E6 /* NMCustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCustomLabel.h; sourceTree = "<group>"; };
 		C8CF69E51553CCF9005AE1E6 /* NMCustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCustomLabel.m; sourceTree = "<group>"; };
 		C8CF69E81553CFFE005AE1E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C8D4D6CA15659452003AF41C /* MissionItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionItemUIViewController.h; sourceTree = "<group>"; };
+		C8D4D6CB15659452003AF41C /* MissionItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionItemUIViewController.m; sourceTree = "<group>"; };
+		C8D4D6CC15659452003AF41C /* MissionItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionItemUIViewController.xib; sourceTree = "<group>"; };
+		C8D4D6D015659564003AF41C /* mission-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item.png"; sourceTree = "<group>"; };
+		C8D4D6D2156596C7003AF41C /* mission-item-ok-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item-ok-bg.png"; sourceTree = "<group>"; };
+		C8D4D6D3156596C7003AF41C /* mission-item-ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item-ok.png"; sourceTree = "<group>"; };
 		C8F12ACF1558103C00DF34D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +287,9 @@
 			children = (
 				C80ED1B015488582002CD0A8 /* MissionUIViewController.h */,
 				C80ED1B115488582002CD0A8 /* MissionUIViewController.m */,
+				C8D4D6CA15659452003AF41C /* MissionItemUIViewController.h */,
+				C8D4D6CB15659452003AF41C /* MissionItemUIViewController.m */,
+				C8D4D6CC15659452003AF41C /* MissionItemUIViewController.xib */,
 			);
 			path = mission;
 			sourceTree = "<group>";
@@ -347,6 +361,9 @@
 		C815E9B315489678004BB7B7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C8D4D6D2156596C7003AF41C /* mission-item-ok-bg.png */,
+				C8D4D6D3156596C7003AF41C /* mission-item-ok.png */,
+				C8D4D6D015659564003AF41C /* mission-item.png */,
 				C81EEFED156140FB0060C513 /* item2@2x.png */,
 				C81D572E155C603A00E02046 /* main-button-normal@2x.png */,
 				C81D572F155C603A00E02046 /* main-button-selected@2x.png */,
@@ -639,6 +656,10 @@
 				C81EEFEE156140FB0060C513 /* item2@2x.png in Resources */,
 				C881354E1563C2690085FFF6 /* ColorUIViewController.xib in Resources */,
 				C880F3F81563D96600C2A974 /* color.json in Resources */,
+				C8D4D6CE15659452003AF41C /* MissionItemUIViewController.xib in Resources */,
+				C8D4D6D115659564003AF41C /* mission-item.png in Resources */,
+				C8D4D6D4156596C7003AF41C /* mission-item-ok-bg.png in Resources */,
+				C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +703,7 @@
 				C88026D715614BCC0093F50A /* Color.m in Sources */,
 				C881354D1563C2690085FFF6 /* ColorManager.m in Sources */,
 				C85D452E1565624D00A5CC97 /* USave.m in Sources */,
+				C8D4D6CD15659452003AF41C /* MissionItemUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
