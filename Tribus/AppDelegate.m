@@ -95,6 +95,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     [self saveContext];
+    exit(0);
 }
 
 

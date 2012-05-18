@@ -1,14 +1,14 @@
 //
-//  BagUIViewController.m
+//  TriboardItemUIViewController.m
 //  Tribus
 //
-//  Created by lbineau on 05/05/12.
+//  Created by monstre on 18/05/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "BagUIViewController.h"
+#import "TriboardItemUIViewController.h"
 
-@implementation BagUIViewController
+@implementation TriboardItemUIViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,21 +29,10 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"itemFromBagUsed" 
-                                                        object:[[NSObject alloc] init]];
-    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload

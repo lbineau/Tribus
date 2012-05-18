@@ -54,8 +54,17 @@
 {
     
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(itemFromBagUsed:) 
+                                                 name:@"itemFromBagUsed" 
+                                               object:nil];
 }
-
+- (void)itemFromBagUsed:(NSNotification *)notification {
+    NSObject *foo;
+    foo = [notification object];
+    NSLog(@"Object received : %@",foo);
+    //do something else
+}
 
 - (void)viewDidUnload
 {

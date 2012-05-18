@@ -73,6 +73,7 @@
     
     //configure carousel
     icarousel.type = iCarouselTypeRotary;
+    icarousel.viewpointOffset = CGSizeMake(0, -10);
     CGFloat width = [UIScreen mainScreen].bounds.size.height;
     CGFloat height = [UIScreen mainScreen].bounds.size.width;
     islandTitle = [[NMCustomLabel alloc] initWithFrame:CGRectMake(0, height - 50, width, 100)];
