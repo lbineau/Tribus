@@ -11,11 +11,14 @@
 #import "SBJson.h"
 
 @implementation ColorManager
-@synthesize colorDictionnary;
 
-- (id)init
+static NSMutableDictionary *colorDictionnary = nil;
+static bool inited = NO;
+
++ (void)init
 {
-    self = [super init];
+    if(inited) return;
+    
     colorDictionnary = [[NSMutableDictionary alloc] init];
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     
@@ -44,31 +47,52 @@
         
         [colorDictionnary setValue:color forKey:color.colorId];
     }
+    inited = YES;
     
-    return self;
 }
 
-- (void) addPoints:(int) points forColorId:(NSString*) colorId{
++ (void) addPoints:(int) points forColorId:(NSString*) colorId{
     Color *color = [colorDictionnary valueForKey:colorId];
     color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue + points)];
-    [self saveColorId:colorId];
+    
+    // DISPATCH l'event addedPoints avec les objets color et points en paramètre
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"addedPoints"
+     object:self
+     userInfo:dict];
+    
+    [ColorManager saveColorId:colorId];
 }
 
-- (void) removePoints:(int) points forColorId:(NSString*) colorId{
++ (void) removePoints:(int) points forColorId:(NSString*) colorId{
     Color *color = [colorDictionnary valueForKey:colorId];
     // 0 security
     if(color.colorValue.integerValue - points >= 0)
         color.colorValue = [NSNumber numberWithInt:(color.colorValue.integerValue - points)];
     else
         color.colorValue = [NSNumber numberWithInt:0];
+    
+    // DISPATCH l'event addedPoints avec les objets color et points en paramètre
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          color, @"color", [[NSNumber alloc] initWithInt:points], @"points", nil];
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"removedPoints"
+     object:nil
+     userInfo:dict];
+    
     [self saveColorId:colorId];
 }
 
-- (void) saveColorId:(NSString*) colorId{
++ (void) saveColorId:(NSString*) colorId{
     NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
     Color *color = [colorDictionnary valueForKey:colorId];
     [pref setValue:color.colorValue forKey:color.colorId];            
     [pref synchronize];
 }
 
++ (NSMutableDictionary*) getColors{
+    return colorDictionnary;
+}
 @end

@@ -75,8 +75,8 @@
     // Set the application defaults from the Settings.bundle
     [USave initSettingsDefaults];
 
-    colorManager = [[ColorManager alloc] init];
-    [colorManager addPoints:50 forColorId:@"blue"];
+    [ColorManager init];
+    [ColorManager addPoints:50 forColorId:@"blue"];
     // Override point for customization after application launch.
     return YES;
 }

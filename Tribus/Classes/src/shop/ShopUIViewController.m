@@ -9,6 +9,8 @@
 #import "ShopUIViewController.h"
 #import "SBJson.h"
 #import "ShopItemUIController.h"
+#import "ColorUIViewController.h"
+#import "ColorManager.h"
 
 @implementation ShopUIViewController
 
@@ -65,6 +67,16 @@
     [productDetail setFrame:icarousel.currentItemView.frame];
     [productDetail setHidden:YES];
     //[icarousel setContentOffset:CGSizeMake(-100, 0)];
+    
+    ColorUIViewController *colorUIViewController = [[ColorUIViewController alloc] initWithNibName:@"ColorUIViewController" bundle:nil andType:big];
+    [self.view addSubview:colorUIViewController.view];
+    
+    CGFloat x = ([self view].bounds.size.height - [colorUIViewController view].bounds.size.width) / 2;
+    CGFloat y = [self view].bounds.size.width  - 60;
+    colorUIViewController.view.frame = CGRectMake(x, y, colorUIViewController.view.frame.size.width, colorUIViewController.view.frame.size.height);
+    //colorUIViewController.view.center = self.view.center;
+
+    [ColorManager addPoints:10 forColorId:@"red"];
 }
 
 - (void)viewDidUnload

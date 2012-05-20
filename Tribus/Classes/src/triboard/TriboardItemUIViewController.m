@@ -1,14 +1,7 @@
-//
-//  TriboardItemUIViewController.m
-//  Tribus
-//
-//  Created by monstre on 18/05/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "TriboardItemUIViewController.h"
 
 @implementation TriboardItemUIViewController
+@synthesize image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +30,7 @@
 
 - (void)viewDidUnload
 {
+    [self setImage:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

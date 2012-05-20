@@ -17,7 +17,6 @@
 		C80ED1C515488582002CD0A8 /* MissionUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1B115488582002CD0A8 /* MissionUIViewController.m */; };
 		C80ED1C715488582002CD0A8 /* ShopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1B715488582002CD0A8 /* ShopUIViewController.m */; };
 		C80ED1C815488582002CD0A8 /* TravelUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1BA15488582002CD0A8 /* TravelUIViewController.m */; };
-		C80ED1C915488582002CD0A8 /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */; };
 		C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED1C015488582002CD0A8 /* TribuUIViewController.m */; };
 		C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C815E9AB15488CDC004BB7B7 /* IslandUIViewController.m */; };
 		C81D5727155C4B3F00E02046 /* Kohicle25.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81D5726155C4B3F00E02046 /* Kohicle25.ttf */; };
@@ -63,7 +62,11 @@
 		C880F3F81563D96600C2A974 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = C880F3F71563D96600C2A974 /* color.json */; };
 		C881354D1563C2690085FFF6 /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C881354B1563C2690085FFF6 /* ColorManager.m */; };
 		C881354E1563C2690085FFF6 /* ColorUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C881354C1563C2690085FFF6 /* ColorUIViewController.xib */; };
-		C8C164391555D32700D88281 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C164381555D32700D88281 /* BagUIViewController.m */; };
+		C88477161569A4A200DEB778 /* ColorUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88477151569A4A200DEB778 /* ColorUIViewController.m */; };
+		C884772A1569A51A00DEB778 /* BagUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88477241569A51A00DEB778 /* BagUIViewController.m */; };
+		C884772B1569A51A00DEB778 /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88477261569A51A00DEB778 /* TriboardItemUIViewController.m */; };
+		C884772D1569A51A00DEB778 /* TriboardUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88477291569A51A00DEB778 /* TriboardUIViewController.m */; };
+		C884772F1569A55300DEB778 /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884772E1569A55300DEB778 /* TriboardItemUIViewController.xib */; };
 		C8CF002A15603D0D00AE8677 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001215603D0D00AE8677 /* NSObject+SBJson.m */; };
 		C8CF002B15603D0D00AE8677 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001515603D0D00AE8677 /* SBJsonParser.m */; };
 		C8CF002C15603D0D00AE8677 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CF001715603D0D00AE8677 /* SBJsonStreamParser.m */; };
@@ -89,8 +92,6 @@
 		C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D3156596C7003AF41C /* mission-item-ok.png */; };
 		C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACF1558103C00DF34D7 /* Settings.bundle */; };
 		E2E65690156679CA00AA1311 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6568F156679CA00AA1311 /* FromTopReplaceSegue.m */; };
-		E2E6569515667C5400AA1311 /* TriboardItemUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6569315667C5400AA1311 /* TriboardItemUIViewController.m */; };
-		E2E6569615667C5400AA1311 /* TriboardItemUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E6569415667C5400AA1311 /* TriboardItemUIViewController.xib */; };
 		E2E65698156681AE00AA1311 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E65697156681AE00AA1311 /* triboard.json */; };
 /* End PBXBuildFile section */
 
@@ -111,8 +112,6 @@
 		C80ED1B715488582002CD0A8 /* ShopUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopUIViewController.m; sourceTree = "<group>"; };
 		C80ED1B915488582002CD0A8 /* TravelUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelUIViewController.h; sourceTree = "<group>"; };
 		C80ED1BA15488582002CD0A8 /* TravelUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelUIViewController.m; sourceTree = "<group>"; };
-		C80ED1BC15488582002CD0A8 /* TriboardUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardUIViewController.h; sourceTree = "<group>"; };
-		C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardUIViewController.m; sourceTree = "<group>"; };
 		C80ED1BF15488582002CD0A8 /* TribuUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TribuUIViewController.h; sourceTree = "<group>"; };
 		C80ED1C015488582002CD0A8 /* TribuUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TribuUIViewController.m; sourceTree = "<group>"; };
 		C815E9AA15488CDC004BB7B7 /* IslandUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IslandUIViewController.h; sourceTree = "<group>"; };
@@ -170,8 +169,15 @@
 		C881354A1563C2690085FFF6 /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorManager.h; sourceTree = "<group>"; };
 		C881354B1563C2690085FFF6 /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorManager.m; sourceTree = "<group>"; };
 		C881354C1563C2690085FFF6 /* ColorUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorUIViewController.xib; sourceTree = "<group>"; };
-		C8C164371555D32700D88281 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
-		C8C164381555D32700D88281 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
+		C88477141569A4A200DEB778 /* ColorUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUIViewController.h; sourceTree = "<group>"; };
+		C88477151569A4A200DEB778 /* ColorUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUIViewController.m; sourceTree = "<group>"; };
+		C88477231569A51A00DEB778 /* BagUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BagUIViewController.h; sourceTree = "<group>"; };
+		C88477241569A51A00DEB778 /* BagUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BagUIViewController.m; sourceTree = "<group>"; };
+		C88477251569A51A00DEB778 /* TriboardItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardItemUIViewController.h; sourceTree = "<group>"; };
+		C88477261569A51A00DEB778 /* TriboardItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardItemUIViewController.m; sourceTree = "<group>"; };
+		C88477281569A51A00DEB778 /* TriboardUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardUIViewController.h; sourceTree = "<group>"; };
+		C88477291569A51A00DEB778 /* TriboardUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardUIViewController.m; sourceTree = "<group>"; };
+		C884772E1569A55300DEB778 /* TriboardItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriboardItemUIViewController.xib; sourceTree = "<group>"; };
 		C8CF001115603D0D00AE8677 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		C8CF001215603D0D00AE8677 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		C8CF001315603D0D00AE8677 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -214,9 +220,6 @@
 		C8F12ACF1558103C00DF34D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E2E6568E156679CA00AA1311 /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
 		E2E6568F156679CA00AA1311 /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
-		E2E6569215667C5400AA1311 /* TriboardItemUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriboardItemUIViewController.h; sourceTree = "<group>"; };
-		E2E6569315667C5400AA1311 /* TriboardItemUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriboardItemUIViewController.m; sourceTree = "<group>"; };
-		E2E6569415667C5400AA1311 /* TriboardItemUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TriboardItemUIViewController.xib; sourceTree = "<group>"; };
 		E2E65697156681AE00AA1311 /* triboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = triboard.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -344,13 +347,13 @@
 		C80ED1BB15488582002CD0A8 /* triboard */ = {
 			isa = PBXGroup;
 			children = (
-				C80ED1BC15488582002CD0A8 /* TriboardUIViewController.h */,
-				C80ED1BD15488582002CD0A8 /* TriboardUIViewController.m */,
-				C8C164371555D32700D88281 /* BagUIViewController.h */,
-				C8C164381555D32700D88281 /* BagUIViewController.m */,
-				E2E6569215667C5400AA1311 /* TriboardItemUIViewController.h */,
-				E2E6569315667C5400AA1311 /* TriboardItemUIViewController.m */,
-				E2E6569415667C5400AA1311 /* TriboardItemUIViewController.xib */,
+				C88477231569A51A00DEB778 /* BagUIViewController.h */,
+				C88477241569A51A00DEB778 /* BagUIViewController.m */,
+				C88477251569A51A00DEB778 /* TriboardItemUIViewController.h */,
+				C88477261569A51A00DEB778 /* TriboardItemUIViewController.m */,
+				C88477281569A51A00DEB778 /* TriboardUIViewController.h */,
+				C884772E1569A55300DEB778 /* TriboardItemUIViewController.xib */,
+				C88477291569A51A00DEB778 /* TriboardUIViewController.m */,
 			);
 			path = triboard;
 			sourceTree = "<group>";
@@ -523,6 +526,8 @@
 		C88135481563C1BF0085FFF6 /* color */ = {
 			isa = PBXGroup;
 			children = (
+				C88477141569A4A200DEB778 /* ColorUIViewController.h */,
+				C88477151569A4A200DEB778 /* ColorUIViewController.m */,
 				C88026D515614BCC0093F50A /* Color.h */,
 				C88026D615614BCC0093F50A /* Color.m */,
 				C881354A1563C2690085FFF6 /* ColorManager.h */,
@@ -676,8 +681,8 @@
 				C8D4D6D115659564003AF41C /* mission-item.png in Resources */,
 				C8D4D6D4156596C7003AF41C /* mission-item-ok-bg.png in Resources */,
 				C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */,
-				E2E6569615667C5400AA1311 /* TriboardItemUIViewController.xib in Resources */,
 				E2E65698156681AE00AA1311 /* triboard.json in Resources */,
+				C884772F1569A55300DEB778 /* TriboardItemUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,14 +701,12 @@
 				C80ED1C515488582002CD0A8 /* MissionUIViewController.m in Sources */,
 				C80ED1C715488582002CD0A8 /* ShopUIViewController.m in Sources */,
 				C80ED1C815488582002CD0A8 /* TravelUIViewController.m in Sources */,
-				C80ED1C915488582002CD0A8 /* TriboardUIViewController.m in Sources */,
 				C80ED1CA15488582002CD0A8 /* TribuUIViewController.m in Sources */,
 				C815E9AC15488CDC004BB7B7 /* IslandUIViewController.m in Sources */,
 				C858645F1553571E00D44582 /* NavigationUIViewController.m in Sources */,
 				C85864611553571E00D44582 /* UntouchableUIView.m in Sources */,
 				C8CF69E61553CCF9005AE1E6 /* NMCustomLabel.m in Sources */,
 				C868F5DE1555A8BA00CF03BB /* CustomUITabBarController.m in Sources */,
-				C8C164391555D32700D88281 /* BagUIViewController.m in Sources */,
 				C809FCF8155EC17200CE769B /* CoreDataBase.xcdatamodeld in Sources */,
 				C8CF002A15603D0D00AE8677 /* NSObject+SBJson.m in Sources */,
 				C8CF002B15603D0D00AE8677 /* SBJsonParser.m in Sources */,
@@ -723,7 +726,10 @@
 				C85D452E1565624D00A5CC97 /* USave.m in Sources */,
 				C8D4D6CD15659452003AF41C /* MissionItemUIViewController.m in Sources */,
 				E2E65690156679CA00AA1311 /* FromTopReplaceSegue.m in Sources */,
-				E2E6569515667C5400AA1311 /* TriboardItemUIViewController.m in Sources */,
+				C88477161569A4A200DEB778 /* ColorUIViewController.m in Sources */,
+				C884772A1569A51A00DEB778 /* BagUIViewController.m in Sources */,
+				C884772B1569A51A00DEB778 /* TriboardItemUIViewController.m in Sources */,
+				C884772D1569A51A00DEB778 /* TriboardUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
