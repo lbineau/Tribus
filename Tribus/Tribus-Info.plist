@@ -30,6 +30,7 @@
 	<array>
 		<string>Kohicle25.ttf</string>
 		<string>Tw Cen MT.ttf</string>
+		<string>Tw Cen MT Bold.ttf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>

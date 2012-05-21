@@ -23,5 +23,6 @@ typedef enum
 @property (nonatomic, retain) UIView *currentView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil andType:(SizeType)sizeType;
+- (void)initializeTextfields;
 
 @end

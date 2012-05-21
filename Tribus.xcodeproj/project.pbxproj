@@ -90,6 +90,7 @@
 		C8D4D6D115659564003AF41C /* mission-item.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D015659564003AF41C /* mission-item.png */; };
 		C8D4D6D4156596C7003AF41C /* mission-item-ok-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D2156596C7003AF41C /* mission-item-ok-bg.png */; };
 		C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */ = {isa = PBXBuildFile; fileRef = C8D4D6D3156596C7003AF41C /* mission-item-ok.png */; };
+		C8D90908156AC4E200B20F78 /* Tw Cen MT Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8D90907156AC4E200B20F78 /* Tw Cen MT Bold.ttf */; };
 		C8F12AD01558103C00DF34D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8F12ACF1558103C00DF34D7 /* Settings.bundle */; };
 		E2E65690156679CA00AA1311 /* FromTopReplaceSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6568F156679CA00AA1311 /* FromTopReplaceSegue.m */; };
 		E2E65698156681AE00AA1311 /* triboard.json in Resources */ = {isa = PBXBuildFile; fileRef = E2E65697156681AE00AA1311 /* triboard.json */; };
@@ -217,6 +218,7 @@
 		C8D4D6D015659564003AF41C /* mission-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item.png"; sourceTree = "<group>"; };
 		C8D4D6D2156596C7003AF41C /* mission-item-ok-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item-ok-bg.png"; sourceTree = "<group>"; };
 		C8D4D6D3156596C7003AF41C /* mission-item-ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mission-item-ok.png"; sourceTree = "<group>"; };
+		C8D90907156AC4E200B20F78 /* Tw Cen MT Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tw Cen MT Bold.ttf"; sourceTree = "<group>"; };
 		C8F12ACF1558103C00DF34D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E2E6568E156679CA00AA1311 /* FromTopReplaceSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromTopReplaceSegue.h; sourceTree = "<group>"; };
 		E2E6568F156679CA00AA1311 /* FromTopReplaceSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromTopReplaceSegue.m; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 		C87985C9154F06E600DC03FA /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C8D90907156AC4E200B20F78 /* Tw Cen MT Bold.ttf */,
 				C81EEFEA1560E3730060C513 /* Tw Cen MT.ttf */,
 				C81D5726155C4B3F00E02046 /* Kohicle25.ttf */,
 			);
@@ -683,6 +686,7 @@
 				C8D4D6D5156596C7003AF41C /* mission-item-ok.png in Resources */,
 				E2E65698156681AE00AA1311 /* triboard.json in Resources */,
 				C884772F1569A55300DEB778 /* TriboardItemUIViewController.xib in Resources */,
+				C8D90908156AC4E200B20F78 /* Tw Cen MT Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

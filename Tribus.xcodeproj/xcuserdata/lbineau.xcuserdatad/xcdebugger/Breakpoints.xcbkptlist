@@ -23,12 +23,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Tribus/Classes/src/color/ColorUIViewController.m"
-         timestampString = "358962275.609496"
+         timestampString = "359318419.409737"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "43"
-         endingLineNumber = "43"
-         landmarkName = "-init"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
+         landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

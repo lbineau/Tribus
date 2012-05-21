@@ -105,7 +105,7 @@
         }
         case iCarouselTranformOptionRadius:
         {
-            return value * 1.5;
+            return value * 1;
         }
         default:
         {

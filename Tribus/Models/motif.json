@@ -13,4 +13,19 @@
  "title":"motif guerrier",
  "description": "ça envoi le paté !",
  "price":{"blue":14,"yellow":60}
+ },{
+ "id":"3",
+ "title":"motif guerrier",
+ "description": "ça envoi le paté !",
+ "price":{"blue":14,"yellow":60}
+ },{
+ "id":"4",
+ "title":"motif guerrier",
+ "description": "ça envoi le paté !",
+ "price":{"blue":14,"yellow":60}
+ },{
+ "id":"5",
+ "title":"motif guerrier",
+ "description": "ça envoi le paté !",
+ "price":{"blue":14,"yellow":60}
  }]

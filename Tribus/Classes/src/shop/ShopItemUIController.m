@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     [titleLabel setFont:[UIFont fontWithName:@"Kohicle25" size:35]];
-    [descLabel setFont:[UIFont fontWithName:@"Tw Cen MT" size:15]];
+    [descLabel setFont:[UIFont fontWithName:@"TwCenMT-Regular" size:15]];
     // Do any additional setup after loading the view from its nib.
 }
 
